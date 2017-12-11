@@ -42,7 +42,6 @@ Q_type *get_running_queue()
 
 tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)(unsigned int tid))
 {
-	//printf("inside\n");
     unsigned int *tmp_ptr;
     
     /* allocate a tcb for a thread */
@@ -81,7 +80,6 @@ tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)
 /* NEW ----> READY */
 void mythread_start(tcb *thread_pointer)
 {
-	//printf("I started\n");
     // assert(thread_pointer && thread_pointer->state == NEW);
     thread_pointer->state = READY;
 }
@@ -89,7 +87,6 @@ void mythread_start(tcb *thread_pointer)
 /* READY --push into--> readyQ */
 void mythread_join(tcb *thread_pointer)
 {
-	//printf("I joined\n");
     // assert(thread_pointer && thread_pointer->state == READY);
     enqueue((void *)thread_pointer, runQueue);
 }
@@ -125,7 +122,7 @@ void *mythread_schedule(void *context)
             main_stack_pointer = (unsigned int *)context;
         }
         
-        do
+        do /* Go through the run queue to find the next tcb that isnt blocked */
         {
         	current_running_thread = (tcb *)dequeue(runQueue);
         	if(current_running_thread->state == BLOCKED)

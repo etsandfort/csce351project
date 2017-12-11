@@ -20,7 +20,6 @@
 
 int semInit(semaphore * sem, int semVal)
 {
-	/* add your code to initialize your semaphore here */
 	sem->value = semVal;
 	sem->threadCount = 0;
 	sem->blockingQueue = Queue(NULL, NULL, 0);
@@ -29,29 +28,28 @@ int semInit(semaphore * sem, int semVal)
 
 void semDown(semaphore * sem)
 {
+	DISABLE_INTERRUPTS();
 	if(sem->value > 0) // block thread
 	{
-		DISABLE_INTERRUPTS();
+		sem->value--;
+		ENABLE_INTERRUPTS();
+	} else
+	{
 		sem->threadCount++;
 		get_current_running_thread()->state = BLOCKED;
 		enqueue(get_current_running_thread(), sem->blockingQueue);
 		ENABLE_INTERRUPTS();
 		while(get_current_running_thread()->state == BLOCKED);
-
 	}
-	DISABLE_INTERRUPTS();
-	sem->value--;
-	ENABLE_INTERRUPTS();
+
 }
 
 void semUp(semaphore * sem)
-{	//we do this out here because it's a binary semaphore
-
+{
 	DISABLE_INTERRUPTS();
 	sem->value++;
 	while(sem->threadCount)
 	{
-
 		tcb *thread_to_unblock = dequeue(sem->blockingQueue);
 		thread_to_unblock->state = READY;
 		sem->threadCount--;

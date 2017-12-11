@@ -9,10 +9,10 @@ Program Header:
     LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
          filesz 0x00000020 memsz 0x00000020 flags r-x
     LOAD off    0x00001020 vaddr 0x00000020 paddr 0x00000020 align 2**12
-         filesz 0x0000dc2c memsz 0x0000dc2c flags r-x
-    LOAD off    0x0000ec4c vaddr 0x0000dc4c paddr 0x0000f6a8 align 2**12
+         filesz 0x0000dc18 memsz 0x0000dc18 flags r-x
+    LOAD off    0x0000ec38 vaddr 0x0000dc38 paddr 0x0000f694 align 2**12
          filesz 0x00001a5c memsz 0x00001a5c flags rw-
-    LOAD off    0x00011104 vaddr 0x00011104 paddr 0x00011104 align 2**12
+    LOAD off    0x000110f0 vaddr 0x000110f0 paddr 0x000110f0 align 2**12
          filesz 0x00000000 memsz 0x00000340 flags rw-
 
 Sections:
@@ -23,65 +23,65 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .text         0000d55c  000001d4  000001d4  000011d4  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  3 .rodata       0000051c  0000d730  0000d730  0000e730  2**2
+  3 .rodata       00000508  0000d730  0000d730  0000e730  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .rwdata       00001a5c  0000dc4c  0000f6a8  0000ec4c  2**2
+  4 .rwdata       00001a5c  0000dc38  0000f694  0000ec38  2**2
                   CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
-  5 .bss          00000340  00011104  00011104  00011104  2**2
+  5 .bss          00000340  000110f0  000110f0  000110f0  2**2
                   ALLOC, SMALL_DATA
-  6 .comment      00000026  00000000  00000000  000106a8  2**0
+  6 .comment      00000026  00000000  00000000  00010694  2**0
                   CONTENTS, READONLY
-  7 .debug_aranges 00000d98  00000000  00000000  000106d0  2**3
+  7 .debug_aranges 00000d98  00000000  00000000  000106c0  2**3
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_pubnames 00001647  00000000  00000000  00011468  2**0
+  8 .debug_pubnames 00001647  00000000  00000000  00011458  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   00025ed1  00000000  00000000  00012aaf  2**0
+  9 .debug_info   00025ed1  00000000  00000000  00012a9f  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 000083ef  00000000  00000000  00038980  2**0
+ 10 .debug_abbrev 000083ef  00000000  00000000  00038970  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   00014e51  00000000  00000000  00040d6f  2**0
+ 11 .debug_line   00014e41  00000000  00000000  00040d5f  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  00001c50  00000000  00000000  00055bc0  2**2
+ 12 .debug_frame  00001c50  00000000  00000000  00055ba0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    000023bf  00000000  00000000  00057810  2**0
+ 13 .debug_str    000023bf  00000000  00000000  000577f0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    0000c5f4  00000000  00000000  00059bcf  2**0
+ 14 .debug_loc    0000c5f4  00000000  00000000  00059baf  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000010  00000000  00000000  000661c4  2**2
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  000661a4  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 000009e0  00000000  00000000  000661d8  2**3
+ 16 .debug_ranges 000009e0  00000000  00000000  000661b8  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  00069ff5  2**0
+ 17 .thread_model 00000003  00000000  00000000  00069fd5  2**0
                   CONTENTS, READONLY
- 18 .cpu          00000003  00000000  00000000  00069ff8  2**0
+ 18 .cpu          00000003  00000000  00000000  00069fd8  2**0
                   CONTENTS, READONLY
- 19 .simulation_enabled 00000001  00000000  00000000  00069ffb  2**0
+ 19 .simulation_enabled 00000001  00000000  00000000  00069fdb  2**0
                   CONTENTS, READONLY
- 20 .sysid_hash   00000004  00000000  00000000  00069ffc  2**0
+ 20 .sysid_hash   00000004  00000000  00000000  00069fdc  2**0
                   CONTENTS, READONLY
- 21 .sysid_base   00000004  00000000  00000000  0006a000  2**0
+ 21 .sysid_base   00000004  00000000  00000000  00069fe0  2**0
                   CONTENTS, READONLY
- 22 .sysid_time   00000004  00000000  00000000  0006a004  2**0
+ 22 .sysid_time   00000004  00000000  00000000  00069fe4  2**0
                   CONTENTS, READONLY
- 23 .stderr_dev   00000009  00000000  00000000  0006a008  2**0
+ 23 .stderr_dev   00000009  00000000  00000000  00069fe8  2**0
                   CONTENTS, READONLY
- 24 .stdin_dev    00000009  00000000  00000000  0006a011  2**0
+ 24 .stdin_dev    00000009  00000000  00000000  00069ff1  2**0
                   CONTENTS, READONLY
- 25 .stdout_dev   00000009  00000000  00000000  0006a01a  2**0
+ 25 .stdout_dev   00000009  00000000  00000000  00069ffa  2**0
                   CONTENTS, READONLY
- 26 .sopc_system_name 0000000b  00000000  00000000  0006a023  2**0
+ 26 .sopc_system_name 0000000b  00000000  00000000  0006a003  2**0
                   CONTENTS, READONLY
- 27 .quartus_project_dir 00000024  00000000  00000000  0006a02e  2**0
+ 27 .quartus_project_dir 00000024  00000000  00000000  0006a00e  2**0
                   CONTENTS, READONLY
- 28 .sopcinfo     0006a1c7  00000000  00000000  0006a052  2**0
+ 28 .sopcinfo     0006a1c7  00000000  00000000  0006a032  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00000000 l    d  .entry	00000000 .entry
 00000020 l    d  .exceptions	00000000 .exceptions
 000001d4 l    d  .text	00000000 .text
 0000d730 l    d  .rodata	00000000 .rodata
-0000dc4c l    d  .rwdata	00000000 .rwdata
-00011104 l    d  .bss	00000000 .bss
+0000dc38 l    d  .rwdata	00000000 .rwdata
+000110f0 l    d  .bss	00000000 .bss
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .debug_aranges	00000000 .debug_aranges
 00000000 l    d  .debug_pubnames	00000000 .debug_pubnames
@@ -97,17 +97,17 @@ SYMBOL TABLE:
 000000b8 l       .exceptions	00000000 jump_here
 00000000 l    df *ABS*	00000000 alt_irq_handler.c
 00000000 l    df *ABS*	00000000 alarm_handler.c
-00011150 l     O .bss	00000018 alarm
+0001113c l     O .bss	00000018 alarm
 00000000 l    df *ABS*	00000000 mysem.c
 00000000 l    df *ABS*	00000000 project1.c
 00000000 l    df *ABS*	00000000 queue.c
 00000000 l    df *ABS*	00000000 thread_handler.c
-00011110 l     O .bss	00000004 current_running_thread
-00011114 l     O .bss	00000004 runQueue
-00011118 l     O .bss	00000004 main_stack_pointer
+000110fc l     O .bss	00000004 current_running_thread
+00011100 l     O .bss	00000004 runQueue
+00011104 l     O .bss	00000004 main_stack_pointer
 00000000 l    df *ABS*	00000000 exit.c
 00000000 l    df *ABS*	00000000 impure.c
-0000dc4c l     O .rwdata	00000400 impure_data
+0000dc38 l     O .rwdata	00000400 impure_data
 00000000 l    df *ABS*	00000000 malloc.c
 00000000 l    df *ABS*	00000000 mallocr.c
 00000000 l    df *ABS*	00000000 printf.c
@@ -117,8 +117,8 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 strlen.c
 00000000 l    df *ABS*	00000000 vfprintf.c
 00001868 l     F .text	00000058 __sprint_r
-0000d986 l     O .rodata	00000010 blanks.3452
-0000d976 l     O .rodata	00000010 zeroes.3453
+0000d972 l     O .rodata	00000010 blanks.3452
+0000d962 l     O .rodata	00000010 zeroes.3453
 00000000 l    df *ABS*	00000000 wsetup.c
 00000000 l    df *ABS*	00000000 __call_atexit.c
 000038e4 l     F .text	00000004 register_fini
@@ -134,15 +134,15 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 fwalk.c
 00000000 l    df *ABS*	00000000 int_errno.c
 00000000 l    df *ABS*	00000000 locale.c
-0000f67c l     O .rwdata	00000004 charset
-0000d9b8 l     O .rodata	00000030 lconv
+0000f668 l     O .rwdata	00000004 charset
+0000d9a4 l     O .rodata	00000030 lconv
 00000000 l    df *ABS*	00000000 makebuf.c
 00000000 l    df *ABS*	00000000 memchr.c
 00000000 l    df *ABS*	00000000 memcpy.c
 00000000 l    df *ABS*	00000000 memmove.c
 00000000 l    df *ABS*	00000000 memset.c
 00000000 l    df *ABS*	00000000 mprec.c
-0000db00 l     O .rodata	0000000c p05.2458
+0000daec l     O .rodata	0000000c p05.2458
 00000000 l    df *ABS*	00000000 putc.c
 00000000 l    df *ABS*	00000000 mallocr.c
 00000000 l    df *ABS*	00000000 s_isinfd.c
@@ -204,12 +204,12 @@ SYMBOL TABLE:
 0000b81c l     F .text	00000060 alt_get_errno
 00000000 l    df *ABS*	00000000 alt_release_fd.c
 00000000 l    df *ABS*	00000000 alt_sbrk.c
-0000f698 l     O .rwdata	00000004 heap_end
+0000f684 l     O .rwdata	00000004 heap_end
 00000000 l    df *ABS*	00000000 alt_tick.c
 00000000 l    df *ABS*	00000000 alt_write.c
 0000bc78 l     F .text	00000060 alt_get_errno
 00000000 l    df *ABS*	00000000 alt_sys_init.c
-0000e608 l     O .rwdata	00001060 JTAG_UART
+0000e5f4 l     O .rwdata	00001060 JTAG_UART
 0000bd68 l     F .text	00000038 alt_dev_reg
 00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_fd.c
 00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_init.c
@@ -242,19 +242,19 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 memcmp.c
 00000000 l    df *ABS*	00000000 __atexit.c
 000016ac g     F .text	0000001c putchar
-00000528 g     F .text	0000011c customer
+00000528 g     F .text	00000120 customer
 00006b70 g     F .text	00000094 _mprec_log10
 00006c5c g     F .text	00000088 __any_on
 000086dc g     F .text	00000070 _isatty_r
-0000dad8 g     O .rodata	00000028 __mprec_tinytens
+0000dac4 g     O .rodata	00000028 __mprec_tinytens
 0000b64c g     F .text	0000006c alt_main
 000016d0 g     F .text	000000a0 _puts_r
-000111b4 g     O .bss	00000100 alt_irq
+000111a0 g     O .bss	00000100 alt_irq
 0000874c g     F .text	00000078 _lseek_r
 00000874 g     F .text	00000058 Queue
-0000f6a8 g       *ABS*	00000000 __flash_rwdata_start
+0000f694 g       *ABS*	00000000 __flash_rwdata_start
 0000a028 g     F .text	00000088 __eqdf2
-00011444 g       *ABS*	00000000 __alt_heap_start
+00011430 g       *ABS*	00000000 __alt_heap_start
 000003a0 g     F .text	000000ac semDown
 00001634 g     F .text	00000044 printf
 000004d8 g     F .text	00000028 semValue
@@ -273,11 +273,11 @@ SYMBOL TABLE:
 00000020 g       *ABS*	00000000 __flash_exceptions_start
 00000a50 g     F .text	00000020 get_current_running_thread
 00008668 g     F .text	00000074 _fstat_r
-00011128 g     O .bss	00000004 errno
-0001113c g     O .bss	00000004 alt_argv
-00017668 g       *ABS*	00000000 _gp
+00011114 g     O .bss	00000004 errno
+00011128 g     O .bss	00000004 alt_argv
+00017654 g       *ABS*	00000000 _gp
 00000ac8 g     F .text	0000015c mythread_create
-0000e488 g     O .rwdata	00000180 alt_fd_list
+0000e474 g     O .rwdata	00000180 alt_fd_list
 000016c8 g     F .text	00000008 _putchar_r
 0000d280 g     F .text	00000094 alt_find_dev
 0000654c g     F .text	000000a0 memcpy
@@ -295,60 +295,60 @@ SYMBOL TABLE:
 00001678 g     F .text	00000034 _printf_r
 0000a770 g     F .text	00000008 __udivsi3
 0000b2e8 g     F .text	000000c4 isatty
-0000d9e8 g     O .rodata	000000c8 __mprec_tens
+0000d9d4 g     O .rodata	000000c8 __mprec_tens
 00006210 g     F .text	00000008 __locale_charset
-0001111c g     O .bss	00000004 __malloc_top_pad
-0000f678 g     O .rwdata	00000004 __mb_cur_max
+00011108 g     O .bss	00000004 __malloc_top_pad
+0000f664 g     O .rwdata	00000004 __mb_cur_max
 00006218 g     F .text	0000000c _localeconv_r
 00007448 g     F .text	0000003c __i2b
 00005bf4 g     F .text	0000049c __sfvwrite_r
 00001784 g     F .text	00000070 _sbrk_r
 000087c4 g     F .text	00000078 _read_r
-0000e454 g     O .rwdata	0000000c __lc_ctype
-0000f690 g     O .rwdata	00000004 alt_max_fd
+0000e440 g     O .rwdata	0000000c __lc_ctype
+0000f67c g     O .rwdata	00000004 alt_max_fd
 0000ac70 g     F .text	00000138 __unpack_d
 00008544 g     F .text	00000110 _fclose_r
 0000548c g     F .text	00000034 fflush
-00011120 g     O .bss	00000004 __malloc_max_sbrked_mem
+0001110c g     O .bss	00000004 __malloc_max_sbrked_mem
 00009998 g     F .text	00000074 __adddf3
 000069a0 g     F .text	00000120 __b2d
 00008ea8 g     F .text	00000660 __umoddi3
 0000b4f8 g     F .text	000000f4 lseek
-0000f66c g     O .rwdata	00000004 _global_impure_ptr
+0000f658 g     O .rwdata	00000004 _global_impure_ptr
 000079dc g     F .text	000005f4 _realloc_r
-00011444 g       *ABS*	00000000 __bss_end
+00011430 g       *ABS*	00000000 __bss_end
 0000cd34 g     F .text	000000f8 alt_iic_isr_register
 0000ba48 g     F .text	0000010c alt_tick
 0000883c g     F .text	0000066c __udivdi3
-0000dab0 g     O .rodata	00000028 __mprec_bigtens
+0000da9c g     O .rodata	00000028 __mprec_bigtens
 000076d0 g     F .text	00000120 __s2b
 0000a4a0 g     F .text	00000194 __floatunsidf
 000068c0 g     F .text	00000060 __mcmp
 000055f4 g     F .text	00000018 __fp_lock_all
 0000ccec g     F .text	00000048 alt_ic_irq_enabled
 0000b9b0 g     F .text	00000098 alt_alarm_stop
-0001114c g     O .bss	00000004 alt_irq_active
+00011138 g     O .bss	00000004 alt_irq_active
 00000234 g     F .text	00000020 reset_alarmflag
 0000010c g     F .exceptions	000000c8 alt_irq_handler
-0000e460 g     O .rwdata	00000028 alt_dev_null
+0000e44c g     O .rwdata	00000028 alt_dev_null
 0000c94c g     F .text	0000001c alt_dcache_flush_all
 0000678c g     F .text	00000070 __hi0bits
 00000a28 g     F .text	00000028 getQsize
 0000a3c8 g     F .text	000000d8 __fixdfsi
-0000f6a8 g       *ABS*	00000000 __ram_rwdata_end
-0000f688 g     O .rwdata	00000008 alt_dev_list
+0000f694 g       *ABS*	00000000 __ram_rwdata_end
+0000f674 g     O .rwdata	00000008 alt_dev_list
 0000bb54 g     F .text	00000124 write
 000078f4 g     F .text	000000e8 _putc_r
-0000dc4c g       *ABS*	00000000 __ram_rodata_end
+0000dc38 g       *ABS*	00000000 __ram_rodata_end
 0000b1b0 g     F .text	000000d8 fstat
 00000000 g       *ABS*	00000000 __alt_mem_SDRAM
 000075b0 g     F .text	00000120 __pow5mult
-0001112c g     O .bss	00000004 __nlocale_changed
+00011118 g     O .bss	00000004 __nlocale_changed
 0000a778 g     F .text	00000008 __umodsi3
-00011190 g     O .bss	0000000c mutex
-00011444 g       *ABS*	00000000 end
+0001117c g     O .bss	0000000c mutex
+00011430 g       *ABS*	00000000 end
 00000500 g     F .text	00000028 semThreadCount
-0001119c g     O .bss	0000000c stylistAvailable
+00011188 g     O .bss	0000000c stylistAvailable
 0000bee8 g     F .text	000000c0 altera_avalon_jtag_uart_init
 0000044c g     F .text	0000008c semUp
 0000d72c g       *ABS*	00000000 __CTOR_LIST__
@@ -361,14 +361,14 @@ SYMBOL TABLE:
 000018c0 g     F .text	00001ec4 ___vfprintf_internal_r
 000058e0 g     F .text	00000314 _free_r
 000038e8 g     F .text	000001b0 __call_exitprocs
-00011130 g     O .bss	00000004 __mlocale_changed
-0000f674 g     O .rwdata	00000004 __malloc_sbrk_base
+0001111c g     O .bss	00000004 __mlocale_changed
+0000f660 g     O .rwdata	00000004 __malloc_sbrk_base
 000001d4 g     F .text	0000003c _start
-00011144 g     O .bss	00000004 _alt_tick_rate
-00000644 g     F .text	000000ec stylist
-00011108 g     O .bss	00000004 waiting
+00011130 g     O .bss	00000004 _alt_tick_rate
+00000648 g     F .text	000000f0 stylist
+000110f4 g     O .bss	00000004 waiting
 000070a8 g     F .text	0000014c __lshift
-00011148 g     O .bss	00000004 _alt_nticks
+00011134 g     O .bss	00000004 _alt_nticks
 0000b6f8 g     F .text	00000124 read
 0000bd0c g     F .text	0000005c alt_sys_init
 0000d58c g     F .text	00000134 __register_exitproc
@@ -376,9 +376,9 @@ SYMBOL TABLE:
 000071f4 g     F .text	00000254 __multiply
 0000c280 g     F .text	00000074 altera_avalon_jtag_uart_close
 0000a780 g     F .text	00000038 __mulsi3
-0000dc4c g       *ABS*	00000000 __ram_rwdata_start
+0000dc38 g       *ABS*	00000000 __ram_rwdata_start
 0000d730 g       *ABS*	00000000 __ram_rodata_start
-00011168 g     O .bss	00000028 __malloc_current_mallinfo
+00011154 g     O .bss	00000028 __malloc_current_mallinfo
 00006da0 g     F .text	0000017c __d2b
 0000bda0 g     F .text	00000058 altera_avalon_jtag_uart_read_fd
 0000d434 g     F .text	000000d0 alt_get_fd
@@ -386,17 +386,17 @@ SYMBOL TABLE:
 000084d4 g     F .text	00000070 _close_r
 0000d518 g     F .text	00000074 memcmp
 0000be50 g     F .text	00000048 altera_avalon_jtag_uart_close_fd
-00011444 g       *ABS*	00000000 __alt_stack_base
+00011430 g       *ABS*	00000000 __alt_stack_base
 0000be98 g     F .text	00000050 altera_avalon_jtag_uart_ioctl_fd
 000037a8 g     F .text	0000013c __swsetup_r
 00009dd0 g     F .text	00000258 __divdf3
 000056c4 g     F .text	000000f0 __sfp
 00006c04 g     F .text	00000058 __copybits
-0000e04c g     O .rwdata	00000408 __malloc_av_
+0000e038 g     O .rwdata	00000408 __malloc_av_
 00005524 g     F .text	00000004 __sinit_lock_release
 00009a0c g     F .text	000003c4 __muldf3
 00000254 g     F .text	00000058 myinterrupt_handler
-0001110c g     O .bss	00000004 haircut
+000110f8 g     O .bss	00000004 haircut
 0000812c g     F .text	00000060 __sread
 0000d314 g     F .text	00000120 alt_find_file
 0000c968 g     F .text	000000b4 alt_dev_llist_insert
@@ -405,24 +405,24 @@ SYMBOL TABLE:
 00005290 g     F .text	000001fc _fflush_r
 0000840c g     F .text	000000c8 _calloc_r
 00000e28 g     F .text	0000006c mythread_cleanup
-00011104 g       *ABS*	00000000 __bss_start
+000110f0 g       *ABS*	00000000 __bss_start
 000066cc g     F .text	00000098 memset
 00000848 g     F .text	0000002c main
-00011140 g     O .bss	00000004 alt_envp
-00011124 g     O .bss	00000004 __malloc_max_total_mem
+0001112c g     O .bss	00000004 alt_envp
+00011110 g     O .bss	00000004 __malloc_max_total_mem
 0000bdf8 g     F .text	00000058 altera_avalon_jtag_uart_write_fd
 00008378 g     F .text	0000001c __swbuf
 00008040 g     F .text	00000008 __sclose
 00800000 g       *ABS*	00000000 __alt_heap_limit
 00008654 g     F .text	00000014 fclose
-000112b4 g     O .bss	00000190 _atexit0
+000112a0 g     O .bss	00000190 _atexit0
 00003cdc g     F .text	000015b4 _dtoa_r
 00000ef4 g     F .text	00000740 _malloc_r
-0000f694 g     O .rwdata	00000004 alt_errno
+0000f680 g     O .rwdata	00000004 alt_errno
 00006158 g     F .text	000000b8 _fwalk
 000077f0 g     F .text	00000104 putc
 0000a6b0 g     F .text	00000060 __divsi3
-0000db0c g     O .rodata	00000014 __thenan_df
+0000daf8 g     O .rodata	00000014 __thenan_df
 000057b4 g     F .text	0000012c _malloc_trim_r
 0000d730 g       *ABS*	00000000 __CTOR_END__
 00000dd4 g     F .text	00000054 mythread_isQempty
@@ -433,20 +433,20 @@ SYMBOL TABLE:
 0000bcd8 g     F .text	00000034 alt_irq_init
 00000c84 g     F .text	0000002c mythread_block
 0000b87c g     F .text	00000078 alt_release_fd
-0000db20 g     O .rodata	00000100 __clz_tab
-00011134 g     O .bss	00000004 _PathLocale
+0000db0c g     O .rodata	00000100 __clz_tab
+00011120 g     O .bss	00000004 _PathLocale
 0000d504 g     F .text	00000014 atexit
 00008394 g     F .text	00000078 _write_r
 000062b8 g     F .text	0000001c setlocale
-0000f668 g     O .rwdata	00000004 _impure_ptr
-00011138 g     O .bss	00000004 alt_argc
+0000f654 g     O .rwdata	00000004 _impure_ptr
+00011124 g     O .bss	00000004 alt_argc
 0000cae0 g     F .text	00000064 _do_dtors
 00000300 g     F .text	000000a0 semInit
 00000020 g       .exceptions	00000000 alt_irq_entry
 00006920 g     F .text	00000080 __ulp
 00007fd0 g     F .text	00000040 __isinfd
 000055dc g     F .text	00000018 __fp_unlock_all
-0000f680 g     O .rwdata	00000008 alt_fs_list
+0000f66c g     O .rwdata	00000008 alt_fs_list
 000008cc g     F .text	000000bc enqueue
 00000020 g       *ABS*	00000000 __ram_exceptions_start
 00006224 g     F .text	00000010 localeconv
@@ -454,13 +454,13 @@ SYMBOL TABLE:
 00000cb0 g     F .text	0000002c mythread_terminate
 0000cb60 g     F .text	00000050 alt_ic_isr_register
 00000988 g     F .text	000000a0 dequeue
-0000f6a8 g       *ABS*	00000000 _edata
-00011444 g       *ABS*	00000000 _end
+0000f694 g       *ABS*	00000000 _edata
+00011430 g       *ABS*	00000000 _end
 000001d4 g       *ABS*	00000000 __ram_exceptions_end
 0000c2f4 g     F .text	000000f4 altera_avalon_jtag_uart_ioctl
 0000cc4c g     F .text	000000a0 alt_ic_irq_disable
 000080b0 g     F .text	0000007c __swrite
-0000f670 g     O .rwdata	00000004 __malloc_trim_threshold
+0000f65c g     O .rwdata	00000004 __malloc_trim_threshold
 00000e94 g     F .text	00000038 exit
 00006090 g     F .text	000000c8 _fwalk_reent
 00006f1c g     F .text	0000018c __mdiff
@@ -476,22 +476,22 @@ SYMBOL TABLE:
 000062d4 g     F .text	00000194 __smakebuf_r
 000017f4 g     F .text	00000074 strlen
 0000d074 g     F .text	0000018c open
-000111a8 g     O .bss	0000000c customerAvailable
+00011194 g     O .bss	0000000c customerAvailable
 0000a1c0 g     F .text	00000088 __gedf2
 00000c24 g     F .text	0000002c mythread_start
 08000000 g       *ABS*	00000000 __alt_mem_SRAM
 0000cb44 g     F .text	0000001c alt_icache_flush_all
-0000f6a4 g     O .rwdata	00000004 alt_priority_mask
+0000f690 g     O .rwdata	00000004 alt_priority_mask
 0000cbb0 g     F .text	0000009c alt_ic_irq_enable
 00003784 g     F .text	00000024 __vfprintf_internal
 00009918 g     F .text	00000080 __subdf3
 000067fc g     F .text	000000c4 __lo0bits
-0000f69c g     O .rwdata	00000008 alt_alarm_list
+0000f688 g     O .rwdata	00000008 alt_alarm_list
 0000ca7c g     F .text	00000064 _do_ctors
-00011104 g     O .bss	00000004 alarmflag
+000110f0 g     O .bss	00000004 alarmflag
 09000000 g       *ABS*	00000000 __alt_mem_Onchip_memory
 0000afc4 g     F .text	00000100 close
-00000730 g     F .text	00000118 os_primitive
+00000738 g     F .text	00000110 os_primitive
 0000b40c g     F .text	00000080 alt_load
 0000a95c g     F .text	00000314 __pack_d
 00000210 g     F .text	00000024 is_alarmflag_set
@@ -768,13 +768,13 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_irq_pending (void)
         alt_irq[i].handler(alt_irq[i].context); 
  14c:	e0bffd17 	ldw	r2,-12(fp)
  150:	00c00074 	movhi	r3,1
- 154:	18c46d04 	addi	r3,r3,4532
+ 154:	18c46804 	addi	r3,r3,4512
  158:	100490fa 	slli	r2,r2,3
  15c:	10c5883a 	add	r2,r2,r3
  160:	11400017 	ldw	r5,0(r2)
  164:	e0bffd17 	ldw	r2,-12(fp)
  168:	00c00074 	movhi	r3,1
- 16c:	18c46d04 	addi	r3,r3,4532
+ 16c:	18c46804 	addi	r3,r3,4512
  170:	100490fa 	slli	r2,r2,3
  174:	10c5883a 	add	r2,r2,r3
  178:	10800104 	addi	r2,r2,4
@@ -849,7 +849,7 @@ Disassembly of section .text:
     movhi gp, %hi(_gp)
      1dc:	06800074 	movhi	gp,1
     ori gp, gp, %lo(_gp)
-     1e0:	d69d9a14 	ori	gp,gp,30312
+     1e0:	d69d9514 	ori	gp,gp,30292
  */
 #ifndef ALT_SIM_OPTIMIZE
     /* Log that the BSS is about to be cleared. */
@@ -858,12 +858,12 @@ Disassembly of section .text:
     movhi r2, %hi(__bss_start)
      1e4:	00800074 	movhi	r2,1
     ori r2, r2, %lo(__bss_start)
-     1e8:	10844114 	ori	r2,r2,4356
+     1e8:	10843c14 	ori	r2,r2,4336
 
     movhi r3, %hi(__bss_end)
      1ec:	00c00074 	movhi	r3,1
     ori r3, r3, %lo(__bss_end)
-     1f0:	18c51114 	ori	r3,r3,5188
+     1f0:	18c50c14 	ori	r3,r3,5168
 
     beq r2, r3, 1f
      1f4:	10c00326 	beq	r2,r3,204 <_start+0x30>
@@ -961,7 +961,7 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_ticks_per_second (void)
 {
   return _alt_tick_rate;
      288:	00800074 	movhi	r2,1
-     28c:	10845104 	addi	r2,r2,4420
+     28c:	10844c04 	addi	r2,r2,4400
      290:	10800017 	ldw	r2,0(r2)
     }
     
@@ -983,12 +983,12 @@ unsigned int start_alarm_succeed()
      2b4:	df000015 	stw	fp,0(sp)
      2b8:	d839883a 	mov	fp,sp
      2bc:	00800074 	movhi	r2,1
-     2c0:	10845104 	addi	r2,r2,4420
+     2c0:	10844c04 	addi	r2,r2,4400
      2c4:	10800017 	ldw	r2,0(r2)
     return alt_alarm_start(&alarm, (alt_ticks_per_second()>>FACTOR), myinterrupt_handler, NULL) >= 0;
      2c8:	100ad0fa 	srli	r5,r2,3
      2cc:	01000074 	movhi	r4,1
-     2d0:	21045404 	addi	r4,r4,4432
+     2d0:	21044f04 	addi	r4,r4,4412
      2d4:	01800034 	movhi	r6,0
      2d8:	31809504 	addi	r6,r6,596
      2dc:	000f883a 	mov	r7,zero
@@ -1065,52 +1065,53 @@ void semDown(semaphore * sem)
      3a8:	df000115 	stw	fp,4(sp)
      3ac:	df000104 	addi	fp,sp,4
      3b0:	e13fff15 	stw	r4,-4(fp)
-	if(sem->value > 0) // block thread
-     3b4:	e0bfff17 	ldw	r2,-4(fp)
-     3b8:	10800117 	ldw	r2,4(r2)
-     3bc:	10800050 	cmplti	r2,r2,1
-     3c0:	1000151e 	bne	r2,zero,418 <semDown+0x78>
-	{
-		DISABLE_INTERRUPTS();
-     3c4:	0001703a 	wrctl	status,zero
-		sem->threadCount++;
-     3c8:	e0bfff17 	ldw	r2,-4(fp)
-     3cc:	10800017 	ldw	r2,0(r2)
-     3d0:	10c00044 	addi	r3,r2,1
-     3d4:	e0bfff17 	ldw	r2,-4(fp)
-     3d8:	10c00015 	stw	r3,0(r2)
-		get_current_running_thread()->state = BLOCKED;
-     3dc:	0000a500 	call	a50 <get_current_running_thread>
-     3e0:	1007883a 	mov	r3,r2
-     3e4:	008000c4 	movi	r2,3
-     3e8:	18800415 	stw	r2,16(r3)
-		enqueue(get_current_running_thread(), sem->blockingQueue);
-     3ec:	0000a500 	call	a50 <get_current_running_thread>
-     3f0:	1009883a 	mov	r4,r2
-     3f4:	e0bfff17 	ldw	r2,-4(fp)
-     3f8:	11400217 	ldw	r5,8(r2)
-     3fc:	00008cc0 	call	8cc <enqueue>
-		ENABLE_INTERRUPTS();
-     400:	06000044 	movi	et,1
-     404:	c001703a 	wrctl	status,et
-		while(get_current_running_thread()->state == BLOCKED);
-     408:	0000a500 	call	a50 <get_current_running_thread>
-     40c:	10800417 	ldw	r2,16(r2)
-     410:	108000e0 	cmpeqi	r2,r2,3
-     414:	103ffc1e 	bne	r2,zero,408 <semDown+0x68>
-
-	}
 	DISABLE_INTERRUPTS();
-     418:	0001703a 	wrctl	status,zero
-	sem->value--;
-     41c:	e0bfff17 	ldw	r2,-4(fp)
-     420:	10800117 	ldw	r2,4(r2)
-     424:	10ffffc4 	addi	r3,r2,-1
-     428:	e0bfff17 	ldw	r2,-4(fp)
-     42c:	10c00115 	stw	r3,4(r2)
-	ENABLE_INTERRUPTS();
-     430:	06000044 	movi	et,1
-     434:	c001703a 	wrctl	status,et
+     3b4:	0001703a 	wrctl	status,zero
+	if(sem->value > 0) // block thread
+     3b8:	e0bfff17 	ldw	r2,-4(fp)
+     3bc:	10800117 	ldw	r2,4(r2)
+     3c0:	10800050 	cmplti	r2,r2,1
+     3c4:	1000081e 	bne	r2,zero,3e8 <semDown+0x48>
+	{
+		sem->value--;
+     3c8:	e0bfff17 	ldw	r2,-4(fp)
+     3cc:	10800117 	ldw	r2,4(r2)
+     3d0:	10ffffc4 	addi	r3,r2,-1
+     3d4:	e0bfff17 	ldw	r2,-4(fp)
+     3d8:	10c00115 	stw	r3,4(r2)
+		ENABLE_INTERRUPTS();
+     3dc:	06000044 	movi	et,1
+     3e0:	c001703a 	wrctl	status,et
+     3e4:	00001406 	br	438 <semDown+0x98>
+	} else
+	{
+		sem->threadCount++;
+     3e8:	e0bfff17 	ldw	r2,-4(fp)
+     3ec:	10800017 	ldw	r2,0(r2)
+     3f0:	10c00044 	addi	r3,r2,1
+     3f4:	e0bfff17 	ldw	r2,-4(fp)
+     3f8:	10c00015 	stw	r3,0(r2)
+		get_current_running_thread()->state = BLOCKED;
+     3fc:	0000a500 	call	a50 <get_current_running_thread>
+     400:	1007883a 	mov	r3,r2
+     404:	008000c4 	movi	r2,3
+     408:	18800415 	stw	r2,16(r3)
+		enqueue(get_current_running_thread(), sem->blockingQueue);
+     40c:	0000a500 	call	a50 <get_current_running_thread>
+     410:	1009883a 	mov	r4,r2
+     414:	e0bfff17 	ldw	r2,-4(fp)
+     418:	11400217 	ldw	r5,8(r2)
+     41c:	00008cc0 	call	8cc <enqueue>
+		ENABLE_INTERRUPTS();
+     420:	06000044 	movi	et,1
+     424:	c001703a 	wrctl	status,et
+		while(get_current_running_thread()->state == BLOCKED);
+     428:	0000a500 	call	a50 <get_current_running_thread>
+     42c:	10800417 	ldw	r2,16(r2)
+     430:	108000e0 	cmpeqi	r2,r2,3
+     434:	103ffc1e 	bne	r2,zero,428 <semDown+0x88>
+	}
+
 }
      438:	e037883a 	mov	sp,fp
      43c:	dfc00117 	ldw	ra,4(sp)
@@ -1139,7 +1140,6 @@ void semUp(semaphore * sem)
 	while(sem->threadCount)
      478:	00000c06 	br	4ac <semUp+0x60>
 	{
-
 		tcb *thread_to_unblock = dequeue(sem->blockingQueue);
      47c:	e0bfff17 	ldw	r2,-4(fp)
      480:	11000217 	ldw	r4,8(r2)
@@ -1165,7 +1165,7 @@ void semUp(semaphore * sem)
      4b0:	10800017 	ldw	r2,0(r2)
      4b4:	1004c03a 	cmpne	r2,r2,zero
      4b8:	103ff01e 	bne	r2,zero,47c <semUp+0x30>
-
+	{
 		tcb *thread_to_unblock = dequeue(sem->blockingQueue);
 		thread_to_unblock->state = READY;
 		sem->threadCount--;
@@ -1230,7 +1230,7 @@ void customer(unsigned int tid)
 	while(1){
 		semDown(&mutex);
      53c:	01000074 	movhi	r4,1
-     540:	21046404 	addi	r4,r4,4496
+     540:	21045f04 	addi	r4,r4,4476
      544:	00003a00 	call	3a0 <semDown>
 		if (waiting < CHAIRS){
      548:	d0a6a817 	ldw	r2,-25952(gp)
@@ -1247,19 +1247,19 @@ void customer(unsigned int tid)
      56c:	00016340 	call	1634 <printf>
 			semUp(&customerAvailable);
      570:	01000074 	movhi	r4,1
-     574:	21046a04 	addi	r4,r4,4520
+     574:	21046504 	addi	r4,r4,4500
      578:	000044c0 	call	44c <semUp>
 			semUp(&mutex);
      57c:	01000074 	movhi	r4,1
-     580:	21046404 	addi	r4,r4,4496
+     580:	21045f04 	addi	r4,r4,4476
      584:	000044c0 	call	44c <semUp>
 			semDown(&stylistAvailable);
      588:	01000074 	movhi	r4,1
-     58c:	21046704 	addi	r4,r4,4508
+     58c:	21046204 	addi	r4,r4,4488
      590:	00003a00 	call	3a0 <semDown>
 			printf("C: stylistAvailable = %d.\n", semThreadCount(&stylistAvailable));
      594:	01000074 	movhi	r4,1
-     598:	21046704 	addi	r4,r4,4508
+     598:	21046204 	addi	r4,r4,4488
      59c:	00005000 	call	500 <semThreadCount>
      5a0:	100b883a 	mov	r5,r2
      5a4:	01000074 	movhi	r4,1
@@ -1267,7 +1267,7 @@ void customer(unsigned int tid)
      5ac:	00016340 	call	1634 <printf>
 			printf("C: customerAvailable = %d.\n", semValue(&customerAvailable));
      5b0:	01000074 	movhi	r4,1
-     5b4:	21046a04 	addi	r4,r4,4520
+     5b4:	21046504 	addi	r4,r4,4500
      5b8:	00004d80 	call	4d8 <semValue>
      5bc:	100b883a 	mov	r5,r2
      5c0:	01000074 	movhi	r4,1
@@ -1288,7 +1288,7 @@ void customer(unsigned int tid)
 	}
 
 }
-     5ec:	00001006 	br	630 <customer+0x108>
+     5ec:	00001106 	br	634 <customer+0x10c>
 			printf("C: customerAvailable = %d.\n", semValue(&customerAvailable));
 			printf("Thread %d is getting a haircut (%d).\n", tid, haircut++);
 			break;
@@ -1296,7 +1296,7 @@ void customer(unsigned int tid)
 		else{
 			semUp(&mutex);
      5f0:	01000074 	movhi	r4,1
-     5f4:	21046404 	addi	r4,r4,4496
+     5f4:	21045f04 	addi	r4,r4,4476
      5f8:	000044c0 	call	44c <semUp>
 			for (j = 0; j < MAX; j++);
      5fc:	e03ffe15 	stw	zero,-8(fp)
@@ -1305,219 +1305,216 @@ void customer(unsigned int tid)
      608:	10800044 	addi	r2,r2,1
      60c:	e0bffe15 	stw	r2,-8(fp)
      610:	e0fffe17 	ldw	r3,-8(fp)
-     614:	00b0d3d4 	movui	r2,49999
-     618:	10fffa0e 	bge	r2,r3,604 <customer+0xdc>
+     614:	008000b4 	movhi	r2,2
+     618:	10a1a7c4 	addi	r2,r2,-31073
+     61c:	10fff90e 	bge	r2,r3,604 <customer+0xdc>
 			printf("Thread %d is going shopping.\n", tid);
-     61c:	01000074 	movhi	r4,1
-     620:	2135f304 	addi	r4,r4,-10292
-     624:	e17fff17 	ldw	r5,-4(fp)
-     628:	00016340 	call	1634 <printf>
+     620:	01000074 	movhi	r4,1
+     624:	2135f304 	addi	r4,r4,-10292
+     628:	e17fff17 	ldw	r5,-4(fp)
+     62c:	00016340 	call	1634 <printf>
 		}
 	}
-     62c:	003fc306 	br	53c <customer+0x14>
+     630:	003fc206 	br	53c <customer+0x14>
 
 }
-     630:	e037883a 	mov	sp,fp
-     634:	dfc00117 	ldw	ra,4(sp)
-     638:	df000017 	ldw	fp,0(sp)
-     63c:	dec00204 	addi	sp,sp,8
-     640:	f800283a 	ret
+     634:	e037883a 	mov	sp,fp
+     638:	dfc00117 	ldw	ra,4(sp)
+     63c:	df000017 	ldw	fp,0(sp)
+     640:	dec00204 	addi	sp,sp,8
+     644:	f800283a 	ret
 
-00000644 <stylist>:
+00000648 <stylist>:
 
 void stylist(unsigned int tid)
 {
-     644:	defffc04 	addi	sp,sp,-16
-     648:	dfc00315 	stw	ra,12(sp)
-     64c:	df000215 	stw	fp,8(sp)
-     650:	df000204 	addi	fp,sp,8
-     654:	e13fff15 	stw	r4,-4(fp)
+     648:	defffc04 	addi	sp,sp,-16
+     64c:	dfc00315 	stw	ra,12(sp)
+     650:	df000215 	stw	fp,8(sp)
+     654:	df000204 	addi	fp,sp,8
+     658:	e13fff15 	stw	r4,-4(fp)
 	int j;
 	while(1){
 		semDown(&customerAvailable);
-     658:	01000074 	movhi	r4,1
-     65c:	21046a04 	addi	r4,r4,4520
-     660:	00003a00 	call	3a0 <semDown>
+     65c:	01000074 	movhi	r4,1
+     660:	21046504 	addi	r4,r4,4500
+     664:	00003a00 	call	3a0 <semDown>
 		semDown(&mutex);
-     664:	01000074 	movhi	r4,1
-     668:	21046404 	addi	r4,r4,4496
-     66c:	00003a00 	call	3a0 <semDown>
+     668:	01000074 	movhi	r4,1
+     66c:	21045f04 	addi	r4,r4,4476
+     670:	00003a00 	call	3a0 <semDown>
 		waiting = waiting - 1;
-     670:	d0a6a817 	ldw	r2,-25952(gp)
-     674:	10bfffc4 	addi	r2,r2,-1
-     678:	d0a6a815 	stw	r2,-25952(gp)
+     674:	d0a6a817 	ldw	r2,-25952(gp)
+     678:	10bfffc4 	addi	r2,r2,-1
+     67c:	d0a6a815 	stw	r2,-25952(gp)
 		semUp(&stylistAvailable);
-     67c:	01000074 	movhi	r4,1
-     680:	21046704 	addi	r4,r4,4508
-     684:	000044c0 	call	44c <semUp>
+     680:	01000074 	movhi	r4,1
+     684:	21046204 	addi	r4,r4,4488
+     688:	000044c0 	call	44c <semUp>
 		semUp(&mutex);
-     688:	01000074 	movhi	r4,1
-     68c:	21046404 	addi	r4,r4,4496
-     690:	000044c0 	call	44c <semUp>
+     68c:	01000074 	movhi	r4,1
+     690:	21045f04 	addi	r4,r4,4476
+     694:	000044c0 	call	44c <semUp>
 		printf("S: %d customer(s) waiting.\n", waiting);
-     694:	d166a817 	ldw	r5,-25952(gp)
-     698:	01000074 	movhi	r4,1
-     69c:	2135fb04 	addi	r4,r4,-10260
-     6a0:	00016340 	call	1634 <printf>
+     698:	d166a817 	ldw	r5,-25952(gp)
+     69c:	01000074 	movhi	r4,1
+     6a0:	2135fb04 	addi	r4,r4,-10260
+     6a4:	00016340 	call	1634 <printf>
 		printf("S: customerAvailable = %d.\n", semThreadCount(&customerAvailable));
-     6a4:	01000074 	movhi	r4,1
-     6a8:	21046a04 	addi	r4,r4,4520
-     6ac:	00005000 	call	500 <semThreadCount>
-     6b0:	100b883a 	mov	r5,r2
-     6b4:	01000074 	movhi	r4,1
-     6b8:	21360204 	addi	r4,r4,-10232
-     6bc:	00016340 	call	1634 <printf>
+     6a8:	01000074 	movhi	r4,1
+     6ac:	21046504 	addi	r4,r4,4500
+     6b0:	00005000 	call	500 <semThreadCount>
+     6b4:	100b883a 	mov	r5,r2
+     6b8:	01000074 	movhi	r4,1
+     6bc:	21360204 	addi	r4,r4,-10232
+     6c0:	00016340 	call	1634 <printf>
 		printf("S: styllistAvaliable = %d.\n", semValue(&stylistAvailable));
-     6c0:	01000074 	movhi	r4,1
-     6c4:	21046704 	addi	r4,r4,4508
-     6c8:	00004d80 	call	4d8 <semValue>
-     6cc:	100b883a 	mov	r5,r2
-     6d0:	01000074 	movhi	r4,1
-     6d4:	21360904 	addi	r4,r4,-10204
-     6d8:	00016340 	call	1634 <printf>
+     6c4:	01000074 	movhi	r4,1
+     6c8:	21046204 	addi	r4,r4,4488
+     6cc:	00004d80 	call	4d8 <semValue>
+     6d0:	100b883a 	mov	r5,r2
+     6d4:	01000074 	movhi	r4,1
+     6d8:	21360904 	addi	r4,r4,-10204
+     6dc:	00016340 	call	1634 <printf>
 		for (j = 0; j < MAX; j++);
-     6dc:	e03ffe15 	stw	zero,-8(fp)
-     6e0:	00000306 	br	6f0 <stylist+0xac>
-     6e4:	e0bffe17 	ldw	r2,-8(fp)
-     6e8:	10800044 	addi	r2,r2,1
-     6ec:	e0bffe15 	stw	r2,-8(fp)
-     6f0:	e0fffe17 	ldw	r3,-8(fp)
-     6f4:	00b0d3d4 	movui	r2,49999
-     6f8:	10fffa0e 	bge	r2,r3,6e4 <stylist+0xa0>
+     6e0:	e03ffe15 	stw	zero,-8(fp)
+     6e4:	00000306 	br	6f4 <stylist+0xac>
+     6e8:	e0bffe17 	ldw	r2,-8(fp)
+     6ec:	10800044 	addi	r2,r2,1
+     6f0:	e0bffe15 	stw	r2,-8(fp)
+     6f4:	e0fffe17 	ldw	r3,-8(fp)
+     6f8:	008000b4 	movhi	r2,2
+     6fc:	10a1a7c4 	addi	r2,r2,-31073
+     700:	10fff90e 	bge	r2,r3,6e8 <stylist+0xa0>
 		printf("Stylist (%d) is cutting hair.\n", tid);
-     6fc:	01000074 	movhi	r4,1
-     700:	21361004 	addi	r4,r4,-10176
-     704:	e17fff17 	ldw	r5,-4(fp)
-     708:	00016340 	call	1634 <printf>
+     704:	01000074 	movhi	r4,1
+     708:	21361004 	addi	r4,r4,-10176
+     70c:	e17fff17 	ldw	r5,-4(fp)
+     710:	00016340 	call	1634 <printf>
 		if (haircut == NUM_THREADS)
-     70c:	d0a6a917 	ldw	r2,-25948(gp)
-     710:	108003e0 	cmpeqi	r2,r2,15
-     714:	1000011e 	bne	r2,zero,71c <stylist+0xd8>
+     714:	d0a6a917 	ldw	r2,-25948(gp)
+     718:	108003e0 	cmpeqi	r2,r2,15
+     71c:	1000011e 	bne	r2,zero,724 <stylist+0xdc>
 			break;
 	}
-     718:	003fcf06 	br	658 <stylist+0x14>
+     720:	003fce06 	br	65c <stylist+0x14>
 }
-     71c:	e037883a 	mov	sp,fp
-     720:	dfc00117 	ldw	ra,4(sp)
-     724:	df000017 	ldw	fp,0(sp)
-     728:	dec00204 	addi	sp,sp,8
-     72c:	f800283a 	ret
+     724:	e037883a 	mov	sp,fp
+     728:	dfc00117 	ldw	ra,4(sp)
+     72c:	df000017 	ldw	fp,0(sp)
+     730:	dec00204 	addi	sp,sp,8
+     734:	f800283a 	ret
 
-00000730 <os_primitive>:
+00000738 <os_primitive>:
     
 void os_primitive()
 {
-     730:	defffc04 	addi	sp,sp,-16
-     734:	dfc00315 	stw	ra,12(sp)
-     738:	df000215 	stw	fp,8(sp)
-     73c:	df000204 	addi	fp,sp,8
+     738:	defffc04 	addi	sp,sp,-16
+     73c:	dfc00315 	stw	ra,12(sp)
+     740:	df000215 	stw	fp,8(sp)
+     744:	df000204 	addi	fp,sp,8
     unsigned int i;
     run_queue_init();
-     740:	0000a700 	call	a70 <run_queue_init>
+     748:	0000a700 	call	a70 <run_queue_init>
     tcb *thread_pointer;
     semInit(&customerAvailable,0);
-     744:	01000074 	movhi	r4,1
-     748:	21046a04 	addi	r4,r4,4520
-     74c:	000b883a 	mov	r5,zero
-     750:	00003000 	call	300 <semInit>
+     74c:	01000074 	movhi	r4,1
+     750:	21046504 	addi	r4,r4,4500
+     754:	000b883a 	mov	r5,zero
+     758:	00003000 	call	300 <semInit>
     semInit(&stylistAvailable,0);
-     754:	01000074 	movhi	r4,1
-     758:	21046704 	addi	r4,r4,4508
-     75c:	000b883a 	mov	r5,zero
-     760:	00003000 	call	300 <semInit>
+     75c:	01000074 	movhi	r4,1
+     760:	21046204 	addi	r4,r4,4488
+     764:	000b883a 	mov	r5,zero
+     768:	00003000 	call	300 <semInit>
     semInit(&mutex,1);
-     764:	01000074 	movhi	r4,1
-     768:	21046404 	addi	r4,r4,4496
-     76c:	01400044 	movi	r5,1
-     770:	00003000 	call	300 <semInit>
+     76c:	01000074 	movhi	r4,1
+     770:	21045f04 	addi	r4,r4,4476
+     774:	01400044 	movi	r5,1
+     778:	00003000 	call	300 <semInit>
     
     for (i = 0; i <= NUM_THREADS; i++)
-     774:	e03fff15 	stw	zero,-4(fp)
-     778:	00001706 	br	7d8 <os_primitive+0xa8>
+     77c:	e03fff15 	stw	zero,-4(fp)
+     780:	00001706 	br	7e0 <os_primitive+0xa8>
     {
     	if (i == NUM_THREADS)
-     77c:	e0bfff17 	ldw	r2,-4(fp)
-     780:	108003d8 	cmpnei	r2,r2,15
-     784:	1000071e 	bne	r2,zero,7a4 <os_primitive+0x74>
+     784:	e0bfff17 	ldw	r2,-4(fp)
+     788:	108003d8 	cmpnei	r2,r2,15
+     78c:	1000071e 	bne	r2,zero,7ac <os_primitive+0x74>
     		thread_pointer = mythread_create(i, 4096, stylist);
-     788:	e13fff17 	ldw	r4,-4(fp)
-     78c:	01440004 	movi	r5,4096
-     790:	01800034 	movhi	r6,0
-     794:	31819104 	addi	r6,r6,1604
-     798:	0000ac80 	call	ac8 <mythread_create>
-     79c:	e0bffe15 	stw	r2,-8(fp)
-     7a0:	00000606 	br	7bc <os_primitive+0x8c>
+     790:	e13fff17 	ldw	r4,-4(fp)
+     794:	01440004 	movi	r5,4096
+     798:	01800034 	movhi	r6,0
+     79c:	31819204 	addi	r6,r6,1608
+     7a0:	0000ac80 	call	ac8 <mythread_create>
+     7a4:	e0bffe15 	stw	r2,-8(fp)
+     7a8:	00000606 	br	7c4 <os_primitive+0x8c>
     	else
     		thread_pointer = mythread_create(i, 4096, customer);
-     7a4:	e13fff17 	ldw	r4,-4(fp)
-     7a8:	01440004 	movi	r5,4096
-     7ac:	01800034 	movhi	r6,0
-     7b0:	31814a04 	addi	r6,r6,1320
-     7b4:	0000ac80 	call	ac8 <mythread_create>
-     7b8:	e0bffe15 	stw	r2,-8(fp)
+     7ac:	e13fff17 	ldw	r4,-4(fp)
+     7b0:	01440004 	movi	r5,4096
+     7b4:	01800034 	movhi	r6,0
+     7b8:	31814a04 	addi	r6,r6,1320
+     7bc:	0000ac80 	call	ac8 <mythread_create>
+     7c0:	e0bffe15 	stw	r2,-8(fp)
         mythread_start(thread_pointer);
-     7bc:	e13ffe17 	ldw	r4,-8(fp)
-     7c0:	0000c240 	call	c24 <mythread_start>
-        mythread_join(thread_pointer);
      7c4:	e13ffe17 	ldw	r4,-8(fp)
-     7c8:	0000c500 	call	c50 <mythread_join>
+     7c8:	0000c240 	call	c24 <mythread_start>
+        mythread_join(thread_pointer);
+     7cc:	e13ffe17 	ldw	r4,-8(fp)
+     7d0:	0000c500 	call	c50 <mythread_join>
     tcb *thread_pointer;
     semInit(&customerAvailable,0);
     semInit(&stylistAvailable,0);
     semInit(&mutex,1);
     
     for (i = 0; i <= NUM_THREADS; i++)
-     7cc:	e0bfff17 	ldw	r2,-4(fp)
-     7d0:	10800044 	addi	r2,r2,1
-     7d4:	e0bfff15 	stw	r2,-4(fp)
-     7d8:	e0bfff17 	ldw	r2,-4(fp)
-     7dc:	10800430 	cmpltui	r2,r2,16
-     7e0:	103fe61e 	bne	r2,zero,77c <os_primitive+0x4c>
+     7d4:	e0bfff17 	ldw	r2,-4(fp)
+     7d8:	10800044 	addi	r2,r2,1
+     7dc:	e0bfff15 	stw	r2,-4(fp)
+     7e0:	e0bfff17 	ldw	r2,-4(fp)
+     7e4:	10800430 	cmpltui	r2,r2,16
+     7e8:	103fe61e 	bne	r2,zero,784 <os_primitive+0x4c>
         mythread_start(thread_pointer);
         mythread_join(thread_pointer);
     }
 
     
     if ( start_alarm_succeed() )
-     7e4:	00002ac0 	call	2ac <start_alarm_succeed>
-     7e8:	1005003a 	cmpeq	r2,r2,zero
-     7ec:	1000071e 	bne	r2,zero,80c <os_primitive+0xdc>
-    {
+     7ec:	00002ac0 	call	2ac <start_alarm_succeed>
+     7f0:	1005003a 	cmpeq	r2,r2,zero
+     7f4:	1000041e 	bne	r2,zero,808 <os_primitive+0xd0>
         printf ("Start the alarm successfully\n");
-     7f0:	01000074 	movhi	r4,1
-     7f4:	21361804 	addi	r4,r4,-10144
-     7f8:	00017700 	call	1770 <puts>
-    	printf ("what is going on\n");
-     7fc:	01000074 	movhi	r4,1
-     800:	21362004 	addi	r4,r4,-10112
-     804:	00017700 	call	1770 <puts>
-     808:	00000306 	br	818 <os_primitive+0xe8>
-    }
+     7f8:	01000074 	movhi	r4,1
+     7fc:	21361804 	addi	r4,r4,-10144
+     800:	00017700 	call	1770 <puts>
+     804:	00000306 	br	814 <os_primitive+0xdc>
     else
         printf ("Unable to start the alarm\n");
-     80c:	01000074 	movhi	r4,1
-     810:	21362504 	addi	r4,r4,-10092
-     814:	00017700 	call	1770 <puts>
+     808:	01000074 	movhi	r4,1
+     80c:	21362004 	addi	r4,r4,-10112
+     810:	00017700 	call	1770 <puts>
 
     /* a while loop that runs forever*/
     while (1)
     {
         /* delay printf for a while */
         for (i = 0; i < MAX; i++);
-     818:	e03fff15 	stw	zero,-4(fp)
-     81c:	00000306 	br	82c <os_primitive+0xfc>
-     820:	e0bfff17 	ldw	r2,-4(fp)
-     824:	10800044 	addi	r2,r2,1
-     828:	e0bfff15 	stw	r2,-4(fp)
-     82c:	e0ffff17 	ldw	r3,-4(fp)
-     830:	00b0d3d4 	movui	r2,49999
-     834:	10fffa2e 	bgeu	r2,r3,820 <os_primitive+0xf0>
+     814:	e03fff15 	stw	zero,-4(fp)
+     818:	00000306 	br	828 <os_primitive+0xf0>
+     81c:	e0bfff17 	ldw	r2,-4(fp)
+     820:	10800044 	addi	r2,r2,1
+     824:	e0bfff15 	stw	r2,-4(fp)
+     828:	e0ffff17 	ldw	r3,-4(fp)
+     82c:	008000b4 	movhi	r2,2
+     830:	10a1a7c4 	addi	r2,r2,-31073
+     834:	10fff92e 	bgeu	r2,r3,81c <os_primitive+0xe4>
         printf ("My simple thread scheduler for CSE351\n");
      838:	01000074 	movhi	r4,1
-     83c:	21362c04 	addi	r4,r4,-10064
+     83c:	21362704 	addi	r4,r4,-10084
      840:	00017700 	call	1770 <puts>
     }
-     844:	003ff406 	br	818 <os_primitive+0xe8>
+     844:	003ff306 	br	814 <os_primitive+0xdc>
 
 00000848 <main>:
 }
@@ -1529,7 +1526,7 @@ int main()
      850:	df000015 	stw	fp,0(sp)
      854:	d839883a 	mov	fp,sp
     os_primitive();
-     858:	00007300 	call	730 <os_primitive>
+     858:	00007380 	call	738 <os_primitive>
     return 0;
      85c:	0005883a 	mov	r2,zero
 }
@@ -1598,7 +1595,7 @@ void enqueue(void *data, Q_type *queue)
     {
         printf("Unable to allocate space!\n");
      8fc:	01000074 	movhi	r4,1
-     900:	21363604 	addi	r4,r4,-10024
+     900:	21363104 	addi	r4,r4,-10044
      904:	00017700 	call	1770 <puts>
         exit(1);
      908:	01000044 	movi	r4,1
@@ -1806,7 +1803,7 @@ tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)
     {
         printf("Unable to allocate space!\n");
      afc:	01000074 	movhi	r4,1
-     b00:	21363d04 	addi	r4,r4,-9996
+     b00:	21363804 	addi	r4,r4,-10016
      b04:	00017700 	call	1770 <puts>
         exit(1);
      b08:	01000044 	movi	r4,1
@@ -1835,7 +1832,7 @@ tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)
     {
         printf("Unable to allocate space!\n");
      b4c:	01000074 	movhi	r4,1
-     b50:	21363d04 	addi	r4,r4,-9996
+     b50:	21363804 	addi	r4,r4,-10016
      b54:	00017700 	call	1770 <puts>
         exit(1);
      b58:	01000044 	movi	r4,1
@@ -2171,7 +2168,7 @@ void mythread_cleanup()
      ea4:	2021883a 	mov	r16,r4
      ea8:	00038e80 	call	38e8 <__call_exitprocs>
      eac:	00800074 	movhi	r2,1
-     eb0:	10bd9b04 	addi	r2,r2,-2452
+     eb0:	10bd9604 	addi	r2,r2,-2472
      eb4:	11000017 	ldw	r4,0(r2)
      eb8:	20800f17 	ldw	r2,60(r4)
      ebc:	10000126 	beq	r2,zero,ec4 <exit+0x30>
@@ -2181,14 +2178,14 @@ void mythread_cleanup()
 
 00000ecc <free>:
      ecc:	00800074 	movhi	r2,1
-     ed0:	10bd9a04 	addi	r2,r2,-2456
+     ed0:	10bd9504 	addi	r2,r2,-2476
      ed4:	200b883a 	mov	r5,r4
      ed8:	11000017 	ldw	r4,0(r2)
      edc:	00058e01 	jmpi	58e0 <_free_r>
 
 00000ee0 <malloc>:
      ee0:	00800074 	movhi	r2,1
-     ee4:	10bd9a04 	addi	r2,r2,-2456
+     ee4:	10bd9504 	addi	r2,r2,-2476
      ee8:	200b883a 	mov	r5,r4
      eec:	11000017 	ldw	r4,0(r2)
      ef0:	0000ef41 	jmpi	ef4 <_malloc_r>
@@ -2240,7 +2237,7 @@ void mythread_cleanup()
      fa0:	880cd0fa 	srli	r6,r17,3
      fa4:	300490fa 	slli	r2,r6,3
      fa8:	02c00074 	movhi	r11,1
-     fac:	5af81304 	addi	r11,r11,-8116
+     fac:	5af80e04 	addi	r11,r11,-8136
      fb0:	12cb883a 	add	r5,r2,r11
      fb4:	2c000317 	ldw	r16,12(r5)
      fb8:	580f883a 	mov	r7,r11
@@ -2258,7 +2255,7 @@ void mythread_cleanup()
      fe8:	31bfffc4 	addi	r6,r6,-1
      fec:	32400044 	addi	r9,r6,1
      ff0:	02800074 	movhi	r10,1
-     ff4:	52b81504 	addi	r10,r10,-8108
+     ff4:	52b81004 	addi	r10,r10,-8128
      ff8:	54000217 	ldw	r16,8(r10)
      ffc:	8280a026 	beq	r16,r10,1280 <_malloc_r+0x38c>
     1000:	80800117 	ldw	r2,4(r16)
@@ -2279,7 +2276,7 @@ void mythread_cleanup()
     103c:	80c00204 	addi	r3,r16,8
     1040:	003fc006 	br	f44 <_malloc_r+0x50>
     1044:	02c00074 	movhi	r11,1
-    1048:	5af81304 	addi	r11,r11,-8116
+    1048:	5af80e04 	addi	r11,r11,-8136
     104c:	8ac5883a 	add	r2,r17,r11
     1050:	14000317 	ldw	r16,12(r2)
     1054:	580f883a 	mov	r7,r11
@@ -2461,7 +2458,7 @@ void mythread_cleanup()
     1314:	0007883a 	mov	r3,zero
     1318:	003f0a06 	br	f44 <_malloc_r+0x50>
     131c:	05c00074 	movhi	r23,1
-    1320:	bdc45a04 	addi	r23,r23,4456
+    1320:	bdc45504 	addi	r23,r23,4436
     1324:	b8800017 	ldw	r2,0(r23)
     1328:	988d883a 	add	r6,r19,r2
     132c:	b9800015 	stw	r6,0(r23)
@@ -2518,7 +2515,7 @@ void mythread_cleanup()
     13f8:	82000315 	stw	r8,12(r16)
     13fc:	81800215 	stw	r6,8(r16)
     1400:	07000074 	movhi	fp,1
-    1404:	e7381304 	addi	fp,fp,-8116
+    1404:	e7380e04 	addi	fp,fp,-8136
     1408:	34000315 	stw	r16,12(r6)
     140c:	44000215 	stw	r16,8(r8)
     1410:	003f3e06 	br	110c <_malloc_r+0x218>
@@ -2538,7 +2535,7 @@ void mythread_cleanup()
     1448:	48c000c4 	addi	r3,r9,3
     144c:	003f3106 	br	1114 <_malloc_r+0x220>
     1450:	05c00074 	movhi	r23,1
-    1454:	bdc45a04 	addi	r23,r23,4456
+    1454:	bdc45504 	addi	r23,r23,4436
     1458:	b8800017 	ldw	r2,0(r23)
     145c:	988d883a 	add	r6,r19,r2
     1460:	b9800015 	stw	r6,0(r23)
@@ -2600,7 +2597,7 @@ void mythread_cleanup()
     1540:	003e9906 	br	fa8 <_malloc_r+0xb4>
     1544:	2009d0ba 	srai	r4,r4,2
     1548:	01400074 	movhi	r5,1
-    154c:	29781304 	addi	r5,r5,-8116
+    154c:	29780e04 	addi	r5,r5,-8136
     1550:	00c00044 	movi	r3,1
     1554:	28800117 	ldw	r2,4(r5)
     1558:	1906983a 	sll	r3,r3,r4
@@ -2666,7 +2663,7 @@ void mythread_cleanup()
     1640:	d9800315 	stw	r6,12(sp)
     1644:	d9c00415 	stw	r7,16(sp)
     1648:	00800074 	movhi	r2,1
-    164c:	10bd9a04 	addi	r2,r2,-2456
+    164c:	10bd9504 	addi	r2,r2,-2476
     1650:	10c00017 	ldw	r3,0(r2)
     1654:	200b883a 	mov	r5,r4
     1658:	d8800204 	addi	r2,sp,8
@@ -2695,7 +2692,7 @@ void mythread_cleanup()
 
 000016ac <putchar>:
     16ac:	00800074 	movhi	r2,1
-    16b0:	10bd9a04 	addi	r2,r2,-2456
+    16b0:	10bd9504 	addi	r2,r2,-2476
     16b4:	11800017 	ldw	r6,0(r2)
     16b8:	200b883a 	mov	r5,r4
     16bc:	3009883a 	mov	r4,r6
@@ -2717,7 +2714,7 @@ void mythread_cleanup()
     16ec:	00017f40 	call	17f4 <strlen>
     16f0:	89400217 	ldw	r5,8(r17)
     16f4:	00c00074 	movhi	r3,1
-    16f8:	18f64504 	addi	r3,r3,-9964
+    16f8:	18f64004 	addi	r3,r3,-9984
     16fc:	01c00044 	movi	r7,1
     1700:	12000044 	addi	r8,r2,1
     1704:	d8c00515 	stw	r3,20(sp)
@@ -2750,7 +2747,7 @@ void mythread_cleanup()
 
 00001770 <puts>:
     1770:	00800074 	movhi	r2,1
-    1774:	10bd9a04 	addi	r2,r2,-2456
+    1774:	10bd9504 	addi	r2,r2,-2476
     1778:	200b883a 	mov	r5,r4
     177c:	11000017 	ldw	r4,0(r2)
     1780:	00016d01 	jmpi	16d0 <_puts_r>
@@ -2759,7 +2756,7 @@ void mythread_cleanup()
     1784:	defffd04 	addi	sp,sp,-12
     1788:	dc000015 	stw	r16,0(sp)
     178c:	04000074 	movhi	r16,1
-    1790:	84044a04 	addi	r16,r16,4392
+    1790:	84044504 	addi	r16,r16,4372
     1794:	dc400115 	stw	r17,4(sp)
     1798:	80000015 	stw	zero,0(r16)
     179c:	2023883a 	mov	r17,r4
@@ -3103,7 +3100,7 @@ void mythread_cleanup()
     1ccc:	dc400d17 	ldw	r17,52(sp)
     1cd0:	1027883a 	mov	r19,r2
     1cd4:	07000074 	movhi	fp,1
-    1cd8:	e7366184 	addi	fp,fp,-9850
+    1cd8:	e7365c84 	addi	fp,fp,-9870
     1cdc:	050001c4 	movi	r20,7
     1ce0:	00000306 	br	1cf0 <___vfprintf_internal_r+0x430>
     1ce4:	843ffc04 	addi	r16,r16,-16
@@ -3176,7 +3173,7 @@ void mythread_cleanup()
     1df0:	1403cf0e 	bge	r2,r16,2d30 <___vfprintf_internal_r+0x1470>
     1df4:	1027883a 	mov	r19,r2
     1df8:	07000074 	movhi	fp,1
-    1dfc:	e7365d84 	addi	fp,fp,-9866
+    1dfc:	e7365884 	addi	fp,fp,-9886
     1e00:	050001c4 	movi	r20,7
     1e04:	00000306 	br	1e14 <___vfprintf_internal_r+0x554>
     1e08:	843ffc04 	addi	r16,r16,-16
@@ -3235,7 +3232,7 @@ void mythread_cleanup()
     1edc:	dc400d17 	ldw	r17,52(sp)
     1ee0:	1027883a 	mov	r19,r2
     1ee4:	07000074 	movhi	fp,1
-    1ee8:	e7366184 	addi	fp,fp,-9850
+    1ee8:	e7365c84 	addi	fp,fp,-9870
     1eec:	050001c4 	movi	r20,7
     1ef0:	00000306 	br	1f00 <___vfprintf_internal_r+0x640>
     1ef4:	843ffc04 	addi	r16,r16,-16
@@ -3354,7 +3351,7 @@ void mythread_cleanup()
     20b8:	14043a0e 	bge	r2,r16,31a4 <___vfprintf_internal_r+0x18e4>
     20bc:	1027883a 	mov	r19,r2
     20c0:	07000074 	movhi	fp,1
-    20c4:	e7365d84 	addi	fp,fp,-9866
+    20c4:	e7365884 	addi	fp,fp,-9886
     20c8:	050001c4 	movi	r20,7
     20cc:	00000306 	br	20dc <___vfprintf_internal_r+0x81c>
     20d0:	843ffc04 	addi	r16,r16,-16
@@ -3407,7 +3404,7 @@ void mythread_cleanup()
     218c:	000a0280 	call	a028 <__eqdf2>
     2190:	1000f21e 	bne	r2,zero,255c <___vfprintf_internal_r+0xc9c>
     2194:	00800074 	movhi	r2,1
-    2198:	10b65d04 	addi	r2,r2,-9868
+    2198:	10b65804 	addi	r2,r2,-9888
     219c:	94800044 	addi	r18,r18,1
     21a0:	8c400044 	addi	r17,r17,1
     21a4:	a8800015 	stw	r2,0(r21)
@@ -3441,7 +3438,7 @@ void mythread_cleanup()
     2214:	dc400d17 	ldw	r17,52(sp)
     2218:	1027883a 	mov	r19,r2
     221c:	07000074 	movhi	fp,1
-    2220:	e7365d84 	addi	fp,fp,-9866
+    2220:	e7365884 	addi	fp,fp,-9886
     2224:	050001c4 	movi	r20,7
     2228:	00000306 	br	2238 <___vfprintf_internal_r+0x978>
     222c:	18c00204 	addi	r3,r3,8
@@ -3670,7 +3667,7 @@ void mythread_cleanup()
     25a8:	dc400d17 	ldw	r17,52(sp)
     25ac:	1027883a 	mov	r19,r2
     25b0:	07000074 	movhi	fp,1
-    25b4:	e7365d84 	addi	fp,fp,-9866
+    25b4:	e7365884 	addi	fp,fp,-9886
     25b8:	050001c4 	movi	r20,7
     25bc:	00000306 	br	25cc <___vfprintf_internal_r+0xd0c>
     25c0:	18c00204 	addi	r3,r3,8
@@ -3699,7 +3696,7 @@ void mythread_cleanup()
     261c:	1400180e 	bge	r2,r16,2680 <___vfprintf_internal_r+0xdc0>
     2620:	1029883a 	mov	r20,r2
     2624:	07000074 	movhi	fp,1
-    2628:	e7365d84 	addi	fp,fp,-9866
+    2628:	e7365884 	addi	fp,fp,-9886
     262c:	054001c4 	movi	r21,7
     2630:	00000306 	br	2640 <___vfprintf_internal_r+0xd80>
     2634:	9cc00204 	addi	r19,r19,8
@@ -3722,7 +3719,7 @@ void mythread_cleanup()
     2678:	dcc01904 	addi	r19,sp,100
     267c:	003fee06 	br	2638 <___vfprintf_internal_r+0xd78>
     2680:	07000074 	movhi	fp,1
-    2684:	e7365d84 	addi	fp,fp,-9866
+    2684:	e7365884 	addi	fp,fp,-9886
     2688:	9425883a 	add	r18,r18,r16
     268c:	8c400044 	addi	r17,r17,1
     2690:	008001c4 	movi	r2,7
@@ -3871,7 +3868,7 @@ void mythread_cleanup()
     28cc:	d8814c15 	stw	r2,1328(sp)
     28d0:	39c00104 	addi	r7,r7,4
     28d4:	01400074 	movhi	r5,1
-    28d8:	29764604 	addi	r5,r5,-9960
+    28d8:	29764104 	addi	r5,r5,-9980
     28dc:	00800c04 	movi	r2,48
     28e0:	0023883a 	mov	r17,zero
     28e4:	01000084 	movi	r4,2
@@ -3910,7 +3907,7 @@ void mythread_cleanup()
     2968:	008011c4 	movi	r2,71
     296c:	11421016 	blt	r2,r5,31b0 <___vfprintf_internal_r+0x18f0>
     2970:	01800074 	movhi	r6,1
-    2974:	31b64b04 	addi	r6,r6,-9940
+    2974:	31b64604 	addi	r6,r6,-9960
     2978:	d9814115 	stw	r6,1284(sp)
     297c:	d9014c17 	ldw	r4,1328(sp)
     2980:	00c000c4 	movi	r3,3
@@ -3933,7 +3930,7 @@ void mythread_cleanup()
     29c4:	d8000405 	stb	zero,16(sp)
     29c8:	003cac06 	br	1c7c <___vfprintf_internal_r+0x3bc>
     29cc:	01400074 	movhi	r5,1
-    29d0:	29765104 	addi	r5,r5,-9916
+    29d0:	29764c04 	addi	r5,r5,-9936
     29d4:	d9414415 	stw	r5,1296(sp)
     29d8:	d9814c17 	ldw	r6,1328(sp)
     29dc:	3080080c 	andi	r2,r6,32
@@ -3958,7 +3955,7 @@ void mythread_cleanup()
     2a28:	d8000405 	stb	zero,16(sp)
     2a2c:	003e3206 	br	22f8 <___vfprintf_internal_r+0xa38>
     2a30:	01800074 	movhi	r6,1
-    2a34:	31b64604 	addi	r6,r6,-9960
+    2a34:	31b64104 	addi	r6,r6,-9980
     2a38:	d9814415 	stw	r6,1296(sp)
     2a3c:	003fe606 	br	29d8 <___vfprintf_internal_r+0x1118>
     2a40:	00800ac4 	movi	r2,43
@@ -4065,14 +4062,14 @@ void mythread_cleanup()
     2bd4:	00800084 	movi	r2,2
     2bd8:	1880fa26 	beq	r3,r2,2fc4 <___vfprintf_internal_r+0x1704>
     2bdc:	01000074 	movhi	r4,1
-    2be0:	21365604 	addi	r4,r4,-9896
+    2be0:	21365104 	addi	r4,r4,-9916
     2be4:	00017f40 	call	17f4 <strlen>
     2be8:	100f883a 	mov	r7,r2
     2bec:	dcc14515 	stw	r19,1300(sp)
     2bf0:	9880010e 	bge	r19,r2,2bf8 <___vfprintf_internal_r+0x1338>
     2bf4:	d8814515 	stw	r2,1300(sp)
     2bf8:	00800074 	movhi	r2,1
-    2bfc:	10b65604 	addi	r2,r2,-9896
+    2bfc:	10b65104 	addi	r2,r2,-9916
     2c00:	dcc14615 	stw	r19,1304(sp)
     2c04:	d8814115 	stw	r2,1284(sp)
     2c08:	003dcf06 	br	2348 <___vfprintf_internal_r+0xa88>
@@ -4120,7 +4117,7 @@ void mythread_cleanup()
     2cb0:	003d9e06 	br	232c <___vfprintf_internal_r+0xa6c>
     2cb4:	dc400d17 	ldw	r17,52(sp)
     2cb8:	07000074 	movhi	fp,1
-    2cbc:	e7365d84 	addi	fp,fp,-9866
+    2cbc:	e7365884 	addi	fp,fp,-9886
     2cc0:	9425883a 	add	r18,r18,r16
     2cc4:	8c400044 	addi	r17,r17,1
     2cc8:	008001c4 	movi	r2,7
@@ -4150,7 +4147,7 @@ void mythread_cleanup()
     2d28:	acc00204 	addi	r19,r21,8
     2d2c:	003cd106 	br	2074 <___vfprintf_internal_r+0x7b4>
     2d30:	07000074 	movhi	fp,1
-    2d34:	e7365d84 	addi	fp,fp,-9866
+    2d34:	e7365884 	addi	fp,fp,-9886
     2d38:	003c4906 	br	1e60 <___vfprintf_internal_r+0x5a0>
     2d3c:	dd000f04 	addi	r20,sp,60
     2d40:	dc801904 	addi	r18,sp,100
@@ -4206,7 +4203,7 @@ void mythread_cleanup()
     2e08:	003efa06 	br	29f4 <___vfprintf_internal_r+0x1134>
     2e0c:	dc400d17 	ldw	r17,52(sp)
     2e10:	07000074 	movhi	fp,1
-    2e14:	e7365d84 	addi	fp,fp,-9866
+    2e14:	e7365884 	addi	fp,fp,-9886
     2e18:	9425883a 	add	r18,r18,r16
     2e1c:	8c400044 	addi	r17,r17,1
     2e20:	008001c4 	movi	r2,7
@@ -4220,7 +4217,7 @@ void mythread_cleanup()
     2e40:	dc800e17 	ldw	r18,56(sp)
     2e44:	dc400d17 	ldw	r17,52(sp)
     2e48:	07000074 	movhi	fp,1
-    2e4c:	e7366184 	addi	fp,fp,-9850
+    2e4c:	e7365c84 	addi	fp,fp,-9870
     2e50:	003bba06 	br	1d3c <___vfprintf_internal_r+0x47c>
     2e54:	d9014f17 	ldw	r4,1340(sp)
     2e58:	b00b883a 	mov	r5,r22
@@ -4251,7 +4248,7 @@ void mythread_cleanup()
     2ebc:	d8000405 	stb	zero,16(sp)
     2ec0:	003d0d06 	br	22f8 <___vfprintf_internal_r+0xa38>
     2ec4:	00800074 	movhi	r2,1
-    2ec8:	10b65d04 	addi	r2,r2,-9868
+    2ec8:	10b65804 	addi	r2,r2,-9888
     2ecc:	94800044 	addi	r18,r18,1
     2ed0:	8c400044 	addi	r17,r17,1
     2ed4:	a8800015 	stw	r2,0(r21)
@@ -4287,7 +4284,7 @@ void mythread_cleanup()
     2f4c:	1400800e 	bge	r2,r16,3150 <___vfprintf_internal_r+0x1890>
     2f50:	1027883a 	mov	r19,r2
     2f54:	07000074 	movhi	fp,1
-    2f58:	e7365d84 	addi	fp,fp,-9866
+    2f58:	e7365884 	addi	fp,fp,-9886
     2f5c:	050001c4 	movi	r20,7
     2f60:	00000306 	br	2f70 <___vfprintf_internal_r+0x16b0>
     2f64:	18c00204 	addi	r3,r3,8
@@ -4343,7 +4340,7 @@ void mythread_cleanup()
     302c:	003cbf06 	br	232c <___vfprintf_internal_r+0xa6c>
     3030:	dc400d17 	ldw	r17,52(sp)
     3034:	07000074 	movhi	fp,1
-    3038:	e7366184 	addi	fp,fp,-9850
+    3038:	e7365c84 	addi	fp,fp,-9870
     303c:	003bc106 	br	1f44 <___vfprintf_internal_r+0x684>
     3040:	d9414c17 	ldw	r5,1328(sp)
     3044:	2880040c 	andi	r2,r5,16
@@ -4414,7 +4411,7 @@ void mythread_cleanup()
     3148:	d8c01904 	addi	r3,sp,100
     314c:	003d8b06 	br	277c <___vfprintf_internal_r+0xebc>
     3150:	07000074 	movhi	fp,1
-    3154:	e7365d84 	addi	fp,fp,-9866
+    3154:	e7365884 	addi	fp,fp,-9886
     3158:	9425883a 	add	r18,r18,r16
     315c:	8c400044 	addi	r17,r17,1
     3160:	008001c4 	movi	r2,7
@@ -4435,10 +4432,10 @@ void mythread_cleanup()
     319c:	d8c01904 	addi	r3,sp,100
     31a0:	003cfc06 	br	2594 <___vfprintf_internal_r+0xcd4>
     31a4:	07000074 	movhi	fp,1
-    31a8:	e7365d84 	addi	fp,fp,-9866
+    31a8:	e7365884 	addi	fp,fp,-9886
     31ac:	003bde06 	br	2128 <___vfprintf_internal_r+0x868>
     31b0:	00800074 	movhi	r2,1
-    31b4:	10b64c04 	addi	r2,r2,-9936
+    31b4:	10b64704 	addi	r2,r2,-9956
     31b8:	d8814115 	stw	r2,1284(sp)
     31bc:	003def06 	br	297c <___vfprintf_internal_r+0x10bc>
     31c0:	d9014217 	ldw	r4,1288(sp)
@@ -4449,7 +4446,7 @@ void mythread_cleanup()
     31d4:	008011c4 	movi	r2,71
     31d8:	1140ce16 	blt	r2,r5,3514 <___vfprintf_internal_r+0x1c54>
     31dc:	01800074 	movhi	r6,1
-    31e0:	31b64d04 	addi	r6,r6,-9932
+    31e0:	31b64804 	addi	r6,r6,-9952
     31e4:	d9814115 	stw	r6,1284(sp)
     31e8:	003de406 	br	297c <___vfprintf_internal_r+0x10bc>
     31ec:	d9014c17 	ldw	r4,1328(sp)
@@ -4498,7 +4495,7 @@ void mythread_cleanup()
     3298:	9800010e 	bge	r19,zero,32a0 <___vfprintf_internal_r+0x19e0>
     329c:	d8014515 	stw	zero,1300(sp)
     32a0:	00800074 	movhi	r2,1
-    32a4:	10b64f04 	addi	r2,r2,-9924
+    32a4:	10b64a04 	addi	r2,r2,-9944
     32a8:	980f883a 	mov	r7,r19
     32ac:	d8814115 	stw	r2,1284(sp)
     32b0:	003a7206 	br	1c7c <___vfprintf_internal_r+0x3bc>
@@ -4649,13 +4646,13 @@ void mythread_cleanup()
     34f4:	0027883a 	mov	r19,zero
     34f8:	00397206 	br	1ac4 <___vfprintf_internal_r+0x204>
     34fc:	00c00074 	movhi	r3,1
-    3500:	18f64f04 	addi	r3,r3,-9924
+    3500:	18f64a04 	addi	r3,r3,-9944
     3504:	100f883a 	mov	r7,r2
     3508:	d8814515 	stw	r2,1300(sp)
     350c:	d8c14115 	stw	r3,1284(sp)
     3510:	0039da06 	br	1c7c <___vfprintf_internal_r+0x3bc>
     3514:	00800074 	movhi	r2,1
-    3518:	10b64e04 	addi	r2,r2,-9928
+    3518:	10b64904 	addi	r2,r2,-9948
     351c:	d8814115 	stw	r2,1284(sp)
     3520:	003d1606 	br	297c <___vfprintf_internal_r+0x10bc>
     3524:	d9414d17 	ldw	r5,1332(sp)
@@ -4813,7 +4810,7 @@ void mythread_cleanup()
 
 00003784 <__vfprintf_internal>:
     3784:	00800074 	movhi	r2,1
-    3788:	10bd9a04 	addi	r2,r2,-2456
+    3788:	10bd9504 	addi	r2,r2,-2476
     378c:	2013883a 	mov	r9,r4
     3790:	11000017 	ldw	r4,0(r2)
     3794:	2805883a 	mov	r2,r5
@@ -4824,7 +4821,7 @@ void mythread_cleanup()
 
 000037a8 <__swsetup_r>:
     37a8:	00800074 	movhi	r2,1
-    37ac:	10bd9a04 	addi	r2,r2,-2456
+    37ac:	10bd9504 	addi	r2,r2,-2476
     37b0:	10c00017 	ldw	r3,0(r2)
     37b4:	defffd04 	addi	sp,sp,-12
     37b8:	dc400115 	stw	r17,4(sp)
@@ -4908,7 +4905,7 @@ void mythread_cleanup()
 
 000038e8 <__call_exitprocs>:
     38e8:	00800074 	movhi	r2,1
-    38ec:	10bd9b04 	addi	r2,r2,-2452
+    38ec:	10bd9604 	addi	r2,r2,-2472
     38f0:	10800017 	ldw	r2,0(r2)
     38f4:	defff304 	addi	sp,sp,-52
     38f8:	df000b15 	stw	fp,44(sp)
@@ -5213,7 +5210,7 @@ void mythread_cleanup()
     3d94:	10029b26 	beq	r2,zero,4804 <_dtoa_r+0xb28>
     3d98:	d9002917 	ldw	r4,164(sp)
     3d9c:	00800074 	movhi	r2,1
-    3da0:	10b65d44 	addi	r2,r2,-9867
+    3da0:	10b65844 	addi	r2,r2,-9887
     3da4:	10ffffc4 	addi	r3,r2,-1
     3da8:	20800015 	stw	r2,0(r4)
     3dac:	1805883a 	mov	r2,r3
@@ -5348,7 +5345,7 @@ void mythread_cleanup()
     3fb0:	20800015 	stw	r2,0(r4)
     3fb4:	a0001026 	beq	r20,zero,3ff8 <_dtoa_r+0x31c>
     3fb8:	00c00074 	movhi	r3,1
-    3fbc:	18f66904 	addi	r3,r3,-9820
+    3fbc:	18f66404 	addi	r3,r3,-9840
     3fc0:	d9802917 	ldw	r6,164(sp)
     3fc4:	303f7926 	beq	r6,zero,3dac <_dtoa_r+0xd0>
     3fc8:	188000c7 	ldb	r2,3(r3)
@@ -5368,7 +5365,7 @@ void mythread_cleanup()
     4000:	a884703a 	and	r2,r21,r2
     4004:	103fec1e 	bne	r2,zero,3fb8 <_dtoa_r+0x2dc>
     4008:	00c00074 	movhi	r3,1
-    400c:	18f66604 	addi	r3,r3,-9832
+    400c:	18f66104 	addi	r3,r3,-9852
     4010:	003feb06 	br	3fc0 <_dtoa_r+0x2e4>
     4014:	d8802917 	ldw	r2,164(sp)
     4018:	19000204 	addi	r4,r3,8
@@ -5422,7 +5419,7 @@ void mythread_cleanup()
     40d8:	100490fa 	slli	r2,r2,3
     40dc:	2025d13a 	srai	r18,r4,4
     40e0:	00c00074 	movhi	r3,1
-    40e4:	18f67a04 	addi	r3,r3,-9752
+    40e4:	18f67504 	addi	r3,r3,-9772
     40e8:	10c5883a 	add	r2,r2,r3
     40ec:	90c0040c 	andi	r3,r18,16
     40f0:	14000017 	ldw	r16,0(r2)
@@ -5431,7 +5428,7 @@ void mythread_cleanup()
     40fc:	05800084 	movi	r22,2
     4100:	90001026 	beq	r18,zero,4144 <_dtoa_r+0x468>
     4104:	04c00074 	movhi	r19,1
-    4108:	9cf6ac04 	addi	r19,r19,-9552
+    4108:	9cf6a704 	addi	r19,r19,-9572
     410c:	9080004c 	andi	r2,r18,1
     4110:	1005003a 	cmpeq	r2,r2,zero
     4114:	1000081e 	bne	r2,zero,4138 <_dtoa_r+0x45c>
@@ -5526,7 +5523,7 @@ void mythread_cleanup()
     4278:	200490fa 	slli	r2,r4,3
     427c:	d9802617 	ldw	r6,152(sp)
     4280:	00c00074 	movhi	r3,1
-    4284:	18f67a04 	addi	r3,r3,-9752
+    4284:	18f67504 	addi	r3,r3,-9772
     4288:	10c5883a 	add	r2,r2,r3
     428c:	14800017 	ldw	r18,0(r2)
     4290:	14c00117 	ldw	r19,4(r2)
@@ -5637,7 +5634,7 @@ void mythread_cleanup()
     4434:	003e5d06 	br	3dac <_dtoa_r+0xd0>
     4438:	d9800d17 	ldw	r6,52(sp)
     443c:	00c00074 	movhi	r3,1
-    4440:	18f67a04 	addi	r3,r3,-9752
+    4440:	18f67504 	addi	r3,r3,-9772
     4444:	d9001217 	ldw	r4,72(sp)
     4448:	300490fa 	slli	r2,r6,3
     444c:	d9401317 	ldw	r5,76(sp)
@@ -5879,7 +5876,7 @@ void mythread_cleanup()
     47fc:	1027883a 	mov	r19,r2
     4800:	003f2506 	br	4498 <_dtoa_r+0x7bc>
     4804:	00c00074 	movhi	r3,1
-    4808:	18f65d04 	addi	r3,r3,-9868
+    4808:	18f65804 	addi	r3,r3,-9888
     480c:	003d6706 	br	3dac <_dtoa_r+0xd0>
     4810:	dd800517 	ldw	r22,20(sp)
     4814:	04000044 	movi	r16,1
@@ -5984,7 +5981,7 @@ void mythread_cleanup()
     49a0:	398003cc 	andi	r6,r7,15
     49a4:	300c90fa 	slli	r6,r6,3
     49a8:	01400074 	movhi	r5,1
-    49ac:	29767a04 	addi	r5,r5,-9752
+    49ac:	29767504 	addi	r5,r5,-9772
     49b0:	d9001217 	ldw	r4,72(sp)
     49b4:	314d883a 	add	r6,r6,r5
     49b8:	30c00117 	ldw	r3,4(r6)
@@ -6001,7 +5998,7 @@ void mythread_cleanup()
     49e4:	8001e526 	beq	r16,zero,517c <_dtoa_r+0x14a0>
     49e8:	05800084 	movi	r22,2
     49ec:	04400074 	movhi	r17,1
-    49f0:	8c76ac04 	addi	r17,r17,-9552
+    49f0:	8c76a704 	addi	r17,r17,-9572
     49f4:	8080004c 	andi	r2,r16,1
     49f8:	1005003a 	cmpeq	r2,r2,zero
     49fc:	1000081e 	bne	r2,zero,4a20 <_dtoa_r+0xd44>
@@ -6151,7 +6148,7 @@ void mythread_cleanup()
     4c3c:	00cff834 	movhi	r3,16352
     4c40:	200c90fa 	slli	r6,r4,3
     4c44:	01000074 	movhi	r4,1
-    4c48:	21367a04 	addi	r4,r4,-9752
+    4c48:	21367504 	addi	r4,r4,-9772
     4c4c:	180b883a 	mov	r5,r3
     4c50:	310d883a 	add	r6,r6,r4
     4c54:	327fff17 	ldw	r9,-4(r6)
@@ -6303,7 +6300,7 @@ void mythread_cleanup()
     4e9c:	d8c00517 	ldw	r3,20(sp)
     4ea0:	003bc206 	br	3dac <_dtoa_r+0xd0>
     4ea4:	01800074 	movhi	r6,1
-    4ea8:	31b6ac04 	addi	r6,r6,-9552
+    4ea8:	31b6a704 	addi	r6,r6,-9572
     4eac:	30c00917 	ldw	r3,36(r6)
     4eb0:	30800817 	ldw	r2,32(r6)
     4eb4:	d9001217 	ldw	r4,72(sp)
@@ -6374,7 +6371,7 @@ void mythread_cleanup()
     4fb8:	003e4106 	br	48c0 <_dtoa_r+0xbe4>
     4fbc:	d8800317 	ldw	r2,12(sp)
     4fc0:	01800074 	movhi	r6,1
-    4fc4:	31b67a04 	addi	r6,r6,-9752
+    4fc4:	31b67504 	addi	r6,r6,-9772
     4fc8:	b009883a 	mov	r4,r22
     4fcc:	100e90fa 	slli	r7,r2,3
     4fd0:	b80b883a 	mov	r5,r23
@@ -6689,12 +6686,12 @@ void mythread_cleanup()
     5494:	2007883a 	mov	r3,r4
     5498:	20000526 	beq	r4,zero,54b0 <fflush+0x24>
     549c:	00800074 	movhi	r2,1
-    54a0:	10bd9a04 	addi	r2,r2,-2456
+    54a0:	10bd9504 	addi	r2,r2,-2476
     54a4:	11000017 	ldw	r4,0(r2)
     54a8:	180b883a 	mov	r5,r3
     54ac:	00052901 	jmpi	5290 <_fflush_r>
     54b0:	00800074 	movhi	r2,1
-    54b4:	10bd9b04 	addi	r2,r2,-2452
+    54b4:	10bd9604 	addi	r2,r2,-2472
     54b8:	11000017 	ldw	r4,0(r2)
     54bc:	00060901 	jmpi	6090 <_fwalk_reent>
 
@@ -6787,7 +6784,7 @@ void mythread_cleanup()
 
 000055dc <__fp_unlock_all>:
     55dc:	00800074 	movhi	r2,1
-    55e0:	10bd9a04 	addi	r2,r2,-2456
+    55e0:	10bd9504 	addi	r2,r2,-2476
     55e4:	11000017 	ldw	r4,0(r2)
     55e8:	01400034 	movhi	r5,0
     55ec:	29557504 	addi	r5,r5,21972
@@ -6795,7 +6792,7 @@ void mythread_cleanup()
 
 000055f4 <__fp_lock_all>:
     55f4:	00800074 	movhi	r2,1
-    55f8:	10bd9a04 	addi	r2,r2,-2456
+    55f8:	10bd9504 	addi	r2,r2,-2476
     55fc:	11000017 	ldw	r4,0(r2)
     5600:	01400034 	movhi	r5,0
     5604:	29557304 	addi	r5,r5,21964
@@ -6808,7 +6805,7 @@ void mythread_cleanup()
 
 00005618 <_cleanup>:
     5618:	00800074 	movhi	r2,1
-    561c:	10bd9b04 	addi	r2,r2,-2452
+    561c:	10bd9604 	addi	r2,r2,-2472
     5620:	11000017 	ldw	r4,0(r2)
     5624:	000560c1 	jmpi	560c <_cleanup_r>
 
@@ -6856,7 +6853,7 @@ void mythread_cleanup()
 000056c4 <__sfp>:
     56c4:	defffd04 	addi	sp,sp,-12
     56c8:	00800074 	movhi	r2,1
-    56cc:	10bd9b04 	addi	r2,r2,-2452
+    56cc:	10bd9604 	addi	r2,r2,-2472
     56d0:	dc000015 	stw	r16,0(sp)
     56d4:	14000017 	ldw	r16,0(r2)
     56d8:	dc400115 	stw	r17,4(sp)
@@ -6919,7 +6916,7 @@ void mythread_cleanup()
     57b4:	defffb04 	addi	sp,sp,-20
     57b8:	dcc00315 	stw	r19,12(sp)
     57bc:	04c00074 	movhi	r19,1
-    57c0:	9cf81304 	addi	r19,r19,-8116
+    57c0:	9cf80e04 	addi	r19,r19,-8136
     57c4:	dc800215 	stw	r18,8(sp)
     57c8:	dc400115 	stw	r17,4(sp)
     57cc:	dc000015 	stw	r16,0(sp)
@@ -6962,7 +6959,7 @@ void mythread_cleanup()
     5860:	9009883a 	mov	r4,r18
     5864:	000b883a 	mov	r5,zero
     5868:	01c00074 	movhi	r7,1
-    586c:	39c45a04 	addi	r7,r7,4456
+    586c:	39c45504 	addi	r7,r7,4436
     5870:	31800054 	ori	r6,r6,1
     5874:	10c00926 	beq	r2,r3,589c <_malloc_trim_r+0xe8>
     5878:	38800017 	ldw	r2,0(r7)
@@ -6983,10 +6980,10 @@ void mythread_cleanup()
     58b4:	19400054 	ori	r5,r3,1
     58b8:	10ffdc0e 	bge	r2,r3,582c <_malloc_trim_r+0x78>
     58bc:	00800074 	movhi	r2,1
-    58c0:	10bd9d04 	addi	r2,r2,-2444
+    58c0:	10bd9804 	addi	r2,r2,-2464
     58c4:	10c00017 	ldw	r3,0(r2)
     58c8:	00800074 	movhi	r2,1
-    58cc:	10845a04 	addi	r2,r2,4456
+    58cc:	10845504 	addi	r2,r2,4436
     58d0:	31400115 	stw	r5,4(r6)
     58d4:	38c7c83a 	sub	r3,r7,r3
     58d8:	10c00015 	stw	r3,0(r2)
@@ -7005,7 +7002,7 @@ void mythread_cleanup()
     5904:	41400117 	ldw	r5,4(r8)
     5908:	00bfff84 	movi	r2,-2
     590c:	02800074 	movhi	r10,1
-    5910:	52b81304 	addi	r10,r10,-8116
+    5910:	52b80e04 	addi	r10,r10,-8136
     5914:	288e703a 	and	r7,r5,r2
     5918:	41cd883a 	add	r6,r8,r7
     591c:	30c00117 	ldw	r3,4(r6)
@@ -7028,7 +7025,7 @@ void mythread_cleanup()
     5960:	2800451e 	bne	r5,zero,5a78 <_free_r+0x198>
     5964:	31000217 	ldw	r4,8(r6)
     5968:	00800074 	movhi	r2,1
-    596c:	10b81504 	addi	r2,r2,-8108
+    596c:	10b81004 	addi	r2,r2,-8128
     5970:	20807b26 	beq	r4,r2,5b60 <_free_r+0x280>
     5974:	30800317 	ldw	r2,12(r6)
     5978:	3a07883a 	add	r3,r7,r8
@@ -7128,14 +7125,14 @@ void mythread_cleanup()
     5af0:	20c00215 	stw	r3,8(r4)
     5af4:	19000315 	stw	r4,12(r3)
     5af8:	00800074 	movhi	r2,1
-    5afc:	10bd9c04 	addi	r2,r2,-2448
+    5afc:	10bd9704 	addi	r2,r2,-2468
     5b00:	11000017 	ldw	r4,0(r2)
     5b04:	30c00054 	ori	r3,r6,1
     5b08:	52000215 	stw	r8,8(r10)
     5b0c:	40c00115 	stw	r3,4(r8)
     5b10:	313fa036 	bltu	r6,r4,5994 <_free_r+0xb4>
     5b14:	00800074 	movhi	r2,1
-    5b18:	10844704 	addi	r2,r2,4380
+    5b18:	10844204 	addi	r2,r2,4360
     5b1c:	11400017 	ldw	r5,0(r2)
     5b20:	8809883a 	mov	r4,r17
     5b24:	00057b40 	call	57b4 <_malloc_trim_r>
@@ -7594,19 +7591,19 @@ void mythread_cleanup()
 
 00006218 <_localeconv_r>:
     6218:	00800074 	movhi	r2,1
-    621c:	10b66e04 	addi	r2,r2,-9800
+    621c:	10b66904 	addi	r2,r2,-9820
     6220:	f800283a 	ret
 
 00006224 <localeconv>:
     6224:	00800074 	movhi	r2,1
-    6228:	10bd9a04 	addi	r2,r2,-2456
+    6228:	10bd9504 	addi	r2,r2,-2476
     622c:	11000017 	ldw	r4,0(r2)
     6230:	00062181 	jmpi	6218 <_localeconv_r>
 
 00006234 <_setlocale_r>:
     6234:	defffc04 	addi	sp,sp,-16
     6238:	00c00074 	movhi	r3,1
-    623c:	18f64404 	addi	r3,r3,-9968
+    623c:	18f63f04 	addi	r3,r3,-9988
     6240:	dc800215 	stw	r18,8(sp)
     6244:	dc400115 	stw	r17,4(sp)
     6248:	dc000015 	stw	r16,0(sp)
@@ -7620,12 +7617,12 @@ void mythread_cleanup()
     6268:	000818c0 	call	818c <strcmp>
     626c:	8009883a 	mov	r4,r16
     6270:	01400074 	movhi	r5,1
-    6274:	29765504 	addi	r5,r5,-9900
+    6274:	29765004 	addi	r5,r5,-9920
     6278:	10000b1e 	bne	r2,zero,62a8 <_setlocale_r+0x74>
     627c:	8c000d15 	stw	r16,52(r17)
     6280:	8c800c15 	stw	r18,48(r17)
     6284:	00c00074 	movhi	r3,1
-    6288:	18f64404 	addi	r3,r3,-9968
+    6288:	18f63f04 	addi	r3,r3,-9988
     628c:	1805883a 	mov	r2,r3
     6290:	dfc00317 	ldw	ra,12(sp)
     6294:	dc800217 	ldw	r18,8(sp)
@@ -7640,7 +7637,7 @@ void mythread_cleanup()
 
 000062b8 <setlocale>:
     62b8:	01800074 	movhi	r6,1
-    62bc:	31bd9a04 	addi	r6,r6,-2456
+    62bc:	31bd9504 	addi	r6,r6,-2476
     62c0:	2007883a 	mov	r3,r4
     62c4:	31000017 	ldw	r4,0(r6)
     62c8:	280d883a 	mov	r6,r5
@@ -8231,7 +8228,7 @@ void mythread_cleanup()
     6b84:	11000c16 	blt	r2,r4,6bb8 <_mprec_log10+0x48>
     6b88:	200490fa 	slli	r2,r4,3
     6b8c:	00c00074 	movhi	r3,1
-    6b90:	18f67a04 	addi	r3,r3,-9752
+    6b90:	18f67504 	addi	r3,r3,-9772
     6b94:	10c5883a 	add	r2,r2,r3
     6b98:	12400117 	ldw	r9,4(r2)
     6b9c:	12000017 	ldw	r8,0(r2)
@@ -8956,7 +8953,7 @@ void mythread_cleanup()
     7688:	003fe106 	br	7610 <__pow5mult+0x60>
     768c:	1085883a 	add	r2,r2,r2
     7690:	00c00074 	movhi	r3,1
-    7694:	18f6c004 	addi	r3,r3,-9472
+    7694:	18f6bb04 	addi	r3,r3,-9492
     7698:	1085883a 	add	r2,r2,r2
     769c:	10c5883a 	add	r2,r2,r3
     76a0:	11bfff17 	ldw	r6,-4(r2)
@@ -9050,7 +9047,7 @@ void mythread_cleanup()
     77f0:	defffc04 	addi	sp,sp,-16
     77f4:	dc800215 	stw	r18,8(sp)
     77f8:	04800074 	movhi	r18,1
-    77fc:	94bd9a04 	addi	r18,r18,-2456
+    77fc:	94bd9504 	addi	r18,r18,-2476
     7800:	90c00017 	ldw	r3,0(r18)
     7804:	dc400115 	stw	r17,4(sp)
     7808:	dc000015 	stw	r16,0(sp)
@@ -9242,7 +9239,7 @@ void mythread_cleanup()
     7ae0:	dec00c04 	addi	sp,sp,48
     7ae4:	f800283a 	ret
     7ae8:	00800074 	movhi	r2,1
-    7aec:	10b81304 	addi	r2,r2,-8116
+    7aec:	10b80e04 	addi	r2,r2,-8136
     7af0:	12400217 	ldw	r9,8(r2)
     7af4:	84cd883a 	add	r6,r16,r19
     7af8:	802b883a 	mov	r21,r16
@@ -9443,7 +9440,7 @@ void mythread_cleanup()
     7e04:	28800115 	stw	r2,4(r5)
     7e08:	80c00117 	ldw	r3,4(r16)
     7e0c:	00800074 	movhi	r2,1
-    7e10:	10b81304 	addi	r2,r2,-8116
+    7e10:	10b80e04 	addi	r2,r2,-8136
     7e14:	b009883a 	mov	r4,r22
     7e18:	18c0004c 	andi	r3,r3,1
     7e1c:	e0c6b03a 	or	r3,fp,r3
@@ -9498,7 +9495,7 @@ void mythread_cleanup()
     7ee0:	28800115 	stw	r2,4(r5)
     7ee4:	b8c00117 	ldw	r3,4(r23)
     7ee8:	00800074 	movhi	r2,1
-    7eec:	10b81304 	addi	r2,r2,-8116
+    7eec:	10b80e04 	addi	r2,r2,-8136
     7ef0:	11400215 	stw	r5,8(r2)
     7ef4:	18c0004c 	andi	r3,r3,1
     7ef8:	e0c6b03a 	or	r3,fp,r3
@@ -9808,7 +9805,7 @@ void mythread_cleanup()
 
 00008378 <__swbuf>:
     8378:	01800074 	movhi	r6,1
-    837c:	31bd9a04 	addi	r6,r6,-2456
+    837c:	31bd9504 	addi	r6,r6,-2476
     8380:	2007883a 	mov	r3,r4
     8384:	31000017 	ldw	r4,0(r6)
     8388:	280d883a 	mov	r6,r5
@@ -9819,7 +9816,7 @@ void mythread_cleanup()
     8394:	defffd04 	addi	sp,sp,-12
     8398:	dc000015 	stw	r16,0(sp)
     839c:	04000074 	movhi	r16,1
-    83a0:	84044a04 	addi	r16,r16,4392
+    83a0:	84044504 	addi	r16,r16,4372
     83a4:	dc400115 	stw	r17,4(sp)
     83a8:	80000015 	stw	zero,0(r16)
     83ac:	2023883a 	mov	r17,r4
@@ -9903,7 +9900,7 @@ void mythread_cleanup()
     84d4:	defffd04 	addi	sp,sp,-12
     84d8:	dc000015 	stw	r16,0(sp)
     84dc:	04000074 	movhi	r16,1
-    84e0:	84044a04 	addi	r16,r16,4392
+    84e0:	84044504 	addi	r16,r16,4372
     84e4:	dc400115 	stw	r17,4(sp)
     84e8:	80000015 	stw	zero,0(r16)
     84ec:	2023883a 	mov	r17,r4
@@ -10001,7 +9998,7 @@ void mythread_cleanup()
 
 00008654 <fclose>:
     8654:	00800074 	movhi	r2,1
-    8658:	10bd9a04 	addi	r2,r2,-2456
+    8658:	10bd9504 	addi	r2,r2,-2476
     865c:	200b883a 	mov	r5,r4
     8660:	11000017 	ldw	r4,0(r2)
     8664:	00085441 	jmpi	8544 <_fclose_r>
@@ -10010,7 +10007,7 @@ void mythread_cleanup()
     8668:	defffd04 	addi	sp,sp,-12
     866c:	dc000015 	stw	r16,0(sp)
     8670:	04000074 	movhi	r16,1
-    8674:	84044a04 	addi	r16,r16,4392
+    8674:	84044504 	addi	r16,r16,4372
     8678:	dc400115 	stw	r17,4(sp)
     867c:	80000015 	stw	zero,0(r16)
     8680:	2023883a 	mov	r17,r4
@@ -10041,7 +10038,7 @@ void mythread_cleanup()
     86dc:	defffd04 	addi	sp,sp,-12
     86e0:	dc000015 	stw	r16,0(sp)
     86e4:	04000074 	movhi	r16,1
-    86e8:	84044a04 	addi	r16,r16,4392
+    86e8:	84044504 	addi	r16,r16,4372
     86ec:	dc400115 	stw	r17,4(sp)
     86f0:	80000015 	stw	zero,0(r16)
     86f4:	2023883a 	mov	r17,r4
@@ -10071,7 +10068,7 @@ void mythread_cleanup()
     874c:	defffd04 	addi	sp,sp,-12
     8750:	dc000015 	stw	r16,0(sp)
     8754:	04000074 	movhi	r16,1
-    8758:	84044a04 	addi	r16,r16,4392
+    8758:	84044504 	addi	r16,r16,4372
     875c:	dc400115 	stw	r17,4(sp)
     8760:	80000015 	stw	zero,0(r16)
     8764:	2023883a 	mov	r17,r4
@@ -10103,7 +10100,7 @@ void mythread_cleanup()
     87c4:	defffd04 	addi	sp,sp,-12
     87c8:	dc000015 	stw	r16,0(sp)
     87cc:	04000074 	movhi	r16,1
-    87d0:	84044a04 	addi	r16,r16,4392
+    87d0:	84044504 	addi	r16,r16,4372
     87d4:	dc400115 	stw	r17,4(sp)
     87d8:	80000015 	stw	zero,0(r16)
     87dc:	2023883a 	mov	r17,r4
@@ -10162,7 +10159,7 @@ void mythread_cleanup()
     88a8:	0005883a 	mov	r2,zero
     88ac:	9884d83a 	srl	r2,r19,r2
     88b0:	01000074 	movhi	r4,1
-    88b4:	2136c804 	addi	r4,r4,-9440
+    88b4:	2136c304 	addi	r4,r4,-9460
     88b8:	01800804 	movi	r6,32
     88bc:	1105883a 	add	r2,r2,r4
     88c0:	10c00003 	ldbu	r3,0(r2)
@@ -10226,7 +10223,7 @@ void mythread_cleanup()
     89a8:	0005883a 	mov	r2,zero
     89ac:	3084d83a 	srl	r2,r6,r2
     89b0:	01000074 	movhi	r4,1
-    89b4:	2136c804 	addi	r4,r4,-9440
+    89b4:	2136c304 	addi	r4,r4,-9460
     89b8:	01c00804 	movi	r7,32
     89bc:	1105883a 	add	r2,r2,r4
     89c0:	10c00003 	ldbu	r3,0(r2)
@@ -10262,7 +10259,7 @@ void mythread_cleanup()
     8a38:	0005883a 	mov	r2,zero
     8a3c:	9884d83a 	srl	r2,r19,r2
     8a40:	01000074 	movhi	r4,1
-    8a44:	2136c804 	addi	r4,r4,-9440
+    8a44:	2136c304 	addi	r4,r4,-9460
     8a48:	01800804 	movi	r6,32
     8a4c:	1105883a 	add	r2,r2,r4
     8a50:	10c00003 	ldbu	r3,0(r2)
@@ -10575,7 +10572,7 @@ void mythread_cleanup()
     8f14:	0005883a 	mov	r2,zero
     8f18:	9884d83a 	srl	r2,r19,r2
     8f1c:	01000074 	movhi	r4,1
-    8f20:	2136c804 	addi	r4,r4,-9440
+    8f20:	2136c304 	addi	r4,r4,-9460
     8f24:	01800804 	movi	r6,32
     8f28:	1105883a 	add	r2,r2,r4
     8f2c:	10c00003 	ldbu	r3,0(r2)
@@ -10638,7 +10635,7 @@ void mythread_cleanup()
     9010:	0005883a 	mov	r2,zero
     9014:	3084d83a 	srl	r2,r6,r2
     9018:	01000074 	movhi	r4,1
-    901c:	2136c804 	addi	r4,r4,-9440
+    901c:	2136c304 	addi	r4,r4,-9460
     9020:	01c00804 	movi	r7,32
     9024:	1105883a 	add	r2,r2,r4
     9028:	10c00003 	ldbu	r3,0(r2)
@@ -10660,7 +10657,7 @@ void mythread_cleanup()
     9068:	0005883a 	mov	r2,zero
     906c:	9884d83a 	srl	r2,r19,r2
     9070:	01000074 	movhi	r4,1
-    9074:	2136c804 	addi	r4,r4,-9440
+    9074:	2136c304 	addi	r4,r4,-9460
     9078:	01800804 	movi	r6,32
     907c:	1105883a 	add	r2,r2,r4
     9080:	10c00003 	ldbu	r3,0(r2)
@@ -11199,7 +11196,7 @@ void mythread_cleanup()
     98cc:	98800117 	ldw	r2,4(r19)
     98d0:	10ff7f26 	beq	r2,r3,96d0 <_fpadd_parts+0x1c8>
     98d4:	04c00074 	movhi	r19,1
-    98d8:	9cf6c304 	addi	r19,r19,-9460
+    98d8:	9cf6be04 	addi	r19,r19,-9480
     98dc:	003f7c06 	br	96d0 <_fpadd_parts+0x1c8>
     98e0:	2006d07a 	srli	r3,r4,1
     98e4:	008007c4 	movi	r2,31
@@ -11521,7 +11518,7 @@ void mythread_cleanup()
     9dbc:	00800084 	movi	r2,2
     9dc0:	20bf351e 	bne	r4,r2,9a98 <__muldf3+0x8c>
     9dc4:	01000074 	movhi	r4,1
-    9dc8:	2136c304 	addi	r4,r4,-9460
+    9dc8:	2136be04 	addi	r4,r4,-9480
     9dcc:	003f3f06 	br	9acc <__muldf3+0xc0>
 
 00009dd0 <__divdf3>:
@@ -11569,7 +11566,7 @@ void mythread_cleanup()
     9e74:	dec01304 	addi	sp,sp,76
     9e78:	f800283a 	ret
     9e7c:	01000074 	movhi	r4,1
-    9e80:	2136c304 	addi	r4,r4,-9460
+    9e80:	2136be04 	addi	r4,r4,-9480
     9e84:	000a95c0 	call	a95c <__pack_d>
     9e88:	dfc01217 	ldw	ra,72(sp)
     9e8c:	dcc01117 	ldw	r19,68(sp)
@@ -12273,7 +12270,7 @@ void mythread_cleanup()
     a8f4:	000b883a 	mov	r5,zero
     a8f8:	20c6d83a 	srl	r3,r4,r3
     a8fc:	00800074 	movhi	r2,1
-    a900:	10b6c804 	addi	r2,r2,-9440
+    a900:	10b6c304 	addi	r2,r2,-9460
     a904:	1887883a 	add	r3,r3,r2
     a908:	18800003 	ldbu	r2,0(r3)
     a90c:	00c00804 	movi	r3,32
@@ -12289,7 +12286,7 @@ void mythread_cleanup()
     a934:	2807883a 	mov	r3,r5
     a938:	20c6d83a 	srl	r3,r4,r3
     a93c:	00800074 	movhi	r2,1
-    a940:	10b6c804 	addi	r2,r2,-9440
+    a940:	10b6c304 	addi	r2,r2,-9460
     a944:	1887883a 	add	r3,r3,r2
     a948:	18800003 	ldbu	r2,0(r3)
     a94c:	00c00804 	movi	r3,32
@@ -12652,7 +12649,7 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_ticks_per_second (void)
 {
   return _alt_tick_rate;
     ae90:	00800074 	movhi	r2,1
-    ae94:	10845104 	addi	r2,r2,4420
+    ae94:	10844c04 	addi	r2,r2,4400
     ae98:	10800017 	ldw	r2,0(r2)
   
   if (alt_ticks_per_second ())
@@ -12699,7 +12696,7 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_nticks (void)
 {
   return _alt_nticks;
     aee8:	00800074 	movhi	r2,1
-    aeec:	10845204 	addi	r2,r2,4424
+    aeec:	10844d04 	addi	r2,r2,4404
     aef0:	10800017 	ldw	r2,0(r2)
       
       current_nticks = alt_nticks();
@@ -12739,7 +12736,7 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_nticks (void)
       alt_llist_insert (&alt_alarm_list, &alarm->llist);
     af38:	e0fffb17 	ldw	r3,-20(fp)
     af3c:	00800074 	movhi	r2,1
-    af40:	10bda704 	addi	r2,r2,-2404
+    af40:	10bda204 	addi	r2,r2,-2424
     af44:	e0bff615 	stw	r2,-40(fp)
     af48:	e0fff715 	stw	r3,-36(fp)
  */
@@ -12829,7 +12826,7 @@ int ALT_CLOSE (int fildes)
     afec:	000a7800 	call	a780 <__mulsi3>
     aff0:	1007883a 	mov	r3,r2
     aff4:	00800074 	movhi	r2,1
-    aff8:	10b92204 	addi	r2,r2,-7032
+    aff8:	10b91d04 	addi	r2,r2,-7052
     affc:	1887883a 	add	r3,r3,r2
     b000:	e0ffff15 	stw	r3,-4(fp)
     b004:	00000106 	br	b00c <close+0x48>
@@ -12919,18 +12916,18 @@ static ALT_INLINE int* alt_get_errno(void)
     b0d0:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     b0d4:	00800074 	movhi	r2,1
-    b0d8:	10bda504 	addi	r2,r2,-2412
+    b0d8:	10bda004 	addi	r2,r2,-2432
     b0dc:	10800017 	ldw	r2,0(r2)
     b0e0:	1005003a 	cmpeq	r2,r2,zero
     b0e4:	1000061e 	bne	r2,zero,b100 <alt_get_errno+0x3c>
     b0e8:	00800074 	movhi	r2,1
-    b0ec:	10bda504 	addi	r2,r2,-2412
+    b0ec:	10bda004 	addi	r2,r2,-2432
     b0f0:	10800017 	ldw	r2,0(r2)
     b0f4:	103ee83a 	callr	r2
     b0f8:	e0bfff15 	stw	r2,-4(fp)
     b0fc:	00000306 	br	b10c <alt_get_errno+0x48>
     b100:	00800074 	movhi	r2,1
-    b104:	10844a04 	addi	r2,r2,4392
+    b104:	10844504 	addi	r2,r2,4372
     b108:	e0bfff15 	stw	r2,-4(fp)
     b10c:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -13052,7 +13049,7 @@ int ALT_FSTAT (int file, struct stat *st)
     b1dc:	000a7800 	call	a780 <__mulsi3>
     b1e0:	1007883a 	mov	r3,r2
     b1e4:	00800074 	movhi	r2,1
-    b1e8:	10b92204 	addi	r2,r2,-7032
+    b1e8:	10b91d04 	addi	r2,r2,-7052
     b1ec:	1887883a 	add	r3,r3,r2
     b1f0:	e0ffff15 	stw	r3,-4(fp)
     b1f4:	00000106 	br	b1fc <fstat+0x4c>
@@ -13129,18 +13126,18 @@ static ALT_INLINE int* alt_get_errno(void)
     b294:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     b298:	00800074 	movhi	r2,1
-    b29c:	10bda504 	addi	r2,r2,-2412
+    b29c:	10bda004 	addi	r2,r2,-2432
     b2a0:	10800017 	ldw	r2,0(r2)
     b2a4:	1005003a 	cmpeq	r2,r2,zero
     b2a8:	1000061e 	bne	r2,zero,b2c4 <alt_get_errno+0x3c>
     b2ac:	00800074 	movhi	r2,1
-    b2b0:	10bda504 	addi	r2,r2,-2412
+    b2b0:	10bda004 	addi	r2,r2,-2432
     b2b4:	10800017 	ldw	r2,0(r2)
     b2b8:	103ee83a 	callr	r2
     b2bc:	e0bfff15 	stw	r2,-4(fp)
     b2c0:	00000306 	br	b2d0 <alt_get_errno+0x48>
     b2c4:	00800074 	movhi	r2,1
-    b2c8:	10844a04 	addi	r2,r2,4392
+    b2c8:	10844504 	addi	r2,r2,4372
     b2cc:	e0bfff15 	stw	r2,-4(fp)
     b2d0:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -13176,7 +13173,7 @@ int ALT_ISATTY (int file)
     b310:	000a7800 	call	a780 <__mulsi3>
     b314:	1007883a 	mov	r3,r2
     b318:	00800074 	movhi	r2,1
-    b31c:	10b92204 	addi	r2,r2,-7032
+    b31c:	10b91d04 	addi	r2,r2,-7052
     b320:	1887883a 	add	r3,r3,r2
     b324:	e0ffff15 	stw	r3,-4(fp)
     b328:	00000106 	br	b330 <isatty+0x48>
@@ -13251,18 +13248,18 @@ static ALT_INLINE int* alt_get_errno(void)
     b3b8:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     b3bc:	00800074 	movhi	r2,1
-    b3c0:	10bda504 	addi	r2,r2,-2412
+    b3c0:	10bda004 	addi	r2,r2,-2432
     b3c4:	10800017 	ldw	r2,0(r2)
     b3c8:	1005003a 	cmpeq	r2,r2,zero
     b3cc:	1000061e 	bne	r2,zero,b3e8 <alt_get_errno+0x3c>
     b3d0:	00800074 	movhi	r2,1
-    b3d4:	10bda504 	addi	r2,r2,-2412
+    b3d4:	10bda004 	addi	r2,r2,-2432
     b3d8:	10800017 	ldw	r2,0(r2)
     b3dc:	103ee83a 	callr	r2
     b3e0:	e0bfff15 	stw	r2,-4(fp)
     b3e4:	00000306 	br	b3f4 <alt_get_errno+0x48>
     b3e8:	00800074 	movhi	r2,1
-    b3ec:	10844a04 	addi	r2,r2,4392
+    b3ec:	10844504 	addi	r2,r2,4372
     b3f0:	e0bfff15 	stw	r2,-4(fp)
     b3f4:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -13289,11 +13286,11 @@ void alt_load (void)
 
   alt_load_section (&__flash_rwdata_start, 
     b41c:	01000074 	movhi	r4,1
-    b420:	213daa04 	addi	r4,r4,-2392
+    b420:	213da504 	addi	r4,r4,-2412
     b424:	01400074 	movhi	r5,1
-    b428:	29771304 	addi	r5,r5,-9140
+    b428:	29770e04 	addi	r5,r5,-9160
     b42c:	01800074 	movhi	r6,1
-    b430:	31bdaa04 	addi	r6,r6,-2392
+    b430:	31bda504 	addi	r6,r6,-2412
     b434:	000b48c0 	call	b48c <alt_load_section>
 
   /*
@@ -13319,7 +13316,7 @@ void alt_load (void)
     b45c:	01400074 	movhi	r5,1
     b460:	2975cc04 	addi	r5,r5,-10448
     b464:	01800074 	movhi	r6,1
-    b468:	31b71304 	addi	r6,r6,-9140
+    b468:	31b70e04 	addi	r6,r6,-9160
     b46c:	000b48c0 	call	b48c <alt_load_section>
   
   /*
@@ -13419,7 +13416,7 @@ off_t ALT_LSEEK (int file, off_t ptr, int dir)
     b52c:	000a7800 	call	a780 <__mulsi3>
     b530:	1007883a 	mov	r3,r2
     b534:	00800074 	movhi	r2,1
-    b538:	10b92204 	addi	r2,r2,-7032
+    b538:	10b91d04 	addi	r2,r2,-7052
     b53c:	1887883a 	add	r3,r3,r2
     b540:	e0ffff15 	stw	r3,-4(fp)
     b544:	00000106 	br	b54c <lseek+0x54>
@@ -13509,18 +13506,18 @@ static ALT_INLINE int* alt_get_errno(void)
     b5f8:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     b5fc:	00800074 	movhi	r2,1
-    b600:	10bda504 	addi	r2,r2,-2412
+    b600:	10bda004 	addi	r2,r2,-2432
     b604:	10800017 	ldw	r2,0(r2)
     b608:	1005003a 	cmpeq	r2,r2,zero
     b60c:	1000061e 	bne	r2,zero,b628 <alt_get_errno+0x3c>
     b610:	00800074 	movhi	r2,1
-    b614:	10bda504 	addi	r2,r2,-2412
+    b614:	10bda004 	addi	r2,r2,-2432
     b618:	10800017 	ldw	r2,0(r2)
     b61c:	103ee83a 	callr	r2
     b620:	e0bfff15 	stw	r2,-4(fp)
     b624:	00000306 	br	b634 <alt_get_errno+0x48>
     b628:	00800074 	movhi	r2,1
-    b62c:	10844a04 	addi	r2,r2,4392
+    b62c:	10844504 	addi	r2,r2,4372
     b630:	e0bfff15 	stw	r2,-4(fp)
     b634:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -13563,11 +13560,11 @@ void alt_main (void)
     ALT_LOG_PRINT_BOOT("[alt_main.c] Redirecting IO.\r\n");
     alt_io_redirect(ALT_STDOUT, ALT_STDIN, ALT_STDERR);
     b668:	01000074 	movhi	r4,1
-    b66c:	21370b04 	addi	r4,r4,-9172
+    b66c:	21370604 	addi	r4,r4,-9192
     b670:	01400074 	movhi	r5,1
-    b674:	29770b04 	addi	r5,r5,-9172
+    b674:	29770604 	addi	r5,r5,-9192
     b678:	01800074 	movhi	r6,1
-    b67c:	31b70b04 	addi	r6,r6,-9172
+    b67c:	31b70604 	addi	r6,r6,-9192
     b680:	000cf040 	call	cf04 <alt_io_redirect>
   /* 
    * Call the C++ constructors 
@@ -13665,7 +13662,7 @@ int ALT_READ (int file, void *ptr, size_t len)
     b728:	000a7800 	call	a780 <__mulsi3>
     b72c:	1007883a 	mov	r3,r2
     b730:	00800074 	movhi	r2,1
-    b734:	10b92204 	addi	r2,r2,-7032
+    b734:	10b91d04 	addi	r2,r2,-7052
     b738:	1887883a 	add	r3,r3,r2
     b73c:	e0ffff15 	stw	r3,-4(fp)
     b740:	00000106 	br	b748 <read+0x50>
@@ -13765,18 +13762,18 @@ static ALT_INLINE int* alt_get_errno(void)
     b828:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     b82c:	00800074 	movhi	r2,1
-    b830:	10bda504 	addi	r2,r2,-2412
+    b830:	10bda004 	addi	r2,r2,-2432
     b834:	10800017 	ldw	r2,0(r2)
     b838:	1005003a 	cmpeq	r2,r2,zero
     b83c:	1000061e 	bne	r2,zero,b858 <alt_get_errno+0x3c>
     b840:	00800074 	movhi	r2,1
-    b844:	10bda504 	addi	r2,r2,-2412
+    b844:	10bda004 	addi	r2,r2,-2432
     b848:	10800017 	ldw	r2,0(r2)
     b84c:	103ee83a 	callr	r2
     b850:	e0bfff15 	stw	r2,-4(fp)
     b854:	00000306 	br	b864 <alt_get_errno+0x48>
     b858:	00800074 	movhi	r2,1
-    b85c:	10844a04 	addi	r2,r2,4392
+    b85c:	10844504 	addi	r2,r2,4372
     b860:	e0bfff15 	stw	r2,-4(fp)
     b864:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -13807,7 +13804,7 @@ void alt_release_fd (int fd)
     alt_fd_list[fd].fd_flags = 0;
     b8a0:	e13fff17 	ldw	r4,-4(fp)
     b8a4:	04000074 	movhi	r16,1
-    b8a8:	84392204 	addi	r16,r16,-7032
+    b8a8:	84391d04 	addi	r16,r16,-7052
     b8ac:	01400304 	movi	r5,12
     b8b0:	000a7800 	call	a780 <__mulsi3>
     b8b4:	1405883a 	add	r2,r2,r16
@@ -13816,7 +13813,7 @@ void alt_release_fd (int fd)
     alt_fd_list[fd].dev      = 0;
     b8c0:	e13fff17 	ldw	r4,-4(fp)
     b8c4:	04000074 	movhi	r16,1
-    b8c8:	84392204 	addi	r16,r16,-7032
+    b8c8:	84391d04 	addi	r16,r16,-7052
     b8cc:	01400304 	movi	r5,12
     b8d0:	000a7800 	call	a780 <__mulsi3>
     b8d4:	1405883a 	add	r2,r2,r16
@@ -14175,7 +14172,7 @@ int ALT_WRITE (int file, const void *ptr, size_t len)
     bb84:	000a7800 	call	a780 <__mulsi3>
     bb88:	1007883a 	mov	r3,r2
     bb8c:	00800074 	movhi	r2,1
-    bb90:	10b92204 	addi	r2,r2,-7032
+    bb90:	10b91d04 	addi	r2,r2,-7052
     bb94:	1887883a 	add	r3,r3,r2
     bb98:	e0ffff15 	stw	r3,-4(fp)
     bb9c:	00000106 	br	bba4 <write+0x50>
@@ -14278,18 +14275,18 @@ static ALT_INLINE int* alt_get_errno(void)
     bc84:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     bc88:	00800074 	movhi	r2,1
-    bc8c:	10bda504 	addi	r2,r2,-2412
+    bc8c:	10bda004 	addi	r2,r2,-2432
     bc90:	10800017 	ldw	r2,0(r2)
     bc94:	1005003a 	cmpeq	r2,r2,zero
     bc98:	1000061e 	bne	r2,zero,bcb4 <alt_get_errno+0x3c>
     bc9c:	00800074 	movhi	r2,1
-    bca0:	10bda504 	addi	r2,r2,-2412
+    bca0:	10bda004 	addi	r2,r2,-2432
     bca4:	10800017 	ldw	r2,0(r2)
     bca8:	103ee83a 	callr	r2
     bcac:	e0bfff15 	stw	r2,-4(fp)
     bcb0:	00000306 	br	bcc0 <alt_get_errno+0x48>
     bcb4:	00800074 	movhi	r2,1
-    bcb8:	10844a04 	addi	r2,r2,4392
+    bcb8:	10844504 	addi	r2,r2,4372
     bcbc:	e0bfff15 	stw	r2,-4(fp)
     bcc0:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -14349,12 +14346,12 @@ void alt_sys_init( void )
     bd30:	000c8bc0 	call	c8bc <alt_avalon_timer_sc_init>
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, JTAG_UART);
     bd34:	01000074 	movhi	r4,1
-    bd38:	21398c04 	addi	r4,r4,-6608
+    bd38:	21398704 	addi	r4,r4,-6628
     bd3c:	000b883a 	mov	r5,zero
     bd40:	01800204 	movi	r6,8
     bd44:	000bee80 	call	bee8 <altera_avalon_jtag_uart_init>
     bd48:	01000074 	movhi	r4,1
-    bd4c:	21398204 	addi	r4,r4,-6648
+    bd4c:	21397d04 	addi	r4,r4,-6668
     bd50:	000bd680 	call	bd68 <alt_dev_reg>
     ALTERA_AVALON_SYSID_INIT ( SYSID, sysid);
 }
@@ -14381,7 +14378,7 @@ static ALT_INLINE int alt_dev_reg (alt_dev* dev)
   return alt_dev_llist_insert ((alt_dev_llist*) dev, &alt_dev_list);
     bd7c:	e13fff17 	ldw	r4,-4(fp)
     bd80:	01400074 	movhi	r5,1
-    bd84:	297da204 	addi	r5,r5,-2424
+    bd84:	297d9d04 	addi	r5,r5,-2444
     bd88:	000c9680 	call	c968 <alt_dev_llist_insert>
 }
     bd8c:	e037883a 	mov	sp,fp
@@ -14581,7 +14578,7 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_ticks_per_second (void)
 {
   return _alt_tick_rate;
     bf5c:	00800074 	movhi	r2,1
-    bf60:	10845104 	addi	r2,r2,4420
+    bf60:	10844c04 	addi	r2,r2,4400
     bf64:	10800017 	ldw	r2,0(r2)
     bf68:	100b883a 	mov	r5,r2
     bf6c:	01800074 	movhi	r6,1
@@ -14907,7 +14904,7 @@ altera_avalon_jtag_uart_timeout(void* context)
     c25c:	e0bffe17 	ldw	r2,-8(fp)
     c260:	10c00915 	stw	r3,36(r2)
     c264:	00800074 	movhi	r2,1
-    c268:	10845104 	addi	r2,r2,4420
+    c268:	10844c04 	addi	r2,r2,4400
     c26c:	10800017 	ldw	r2,0(r2)
       ALT_FLAG_POST (sp->events, ALT_JTAG_UART_TIMEOUT, OS_FLAG_SET);
     }
@@ -15657,14 +15654,14 @@ static ALT_INLINE int ALT_ALWAYS_INLINE alt_sysclk_init (alt_u32 nticks)
 {
   if (! _alt_tick_rate)
     c8e4:	00800074 	movhi	r2,1
-    c8e8:	10845104 	addi	r2,r2,4420
+    c8e8:	10844c04 	addi	r2,r2,4400
     c8ec:	10800017 	ldw	r2,0(r2)
     c8f0:	1004c03a 	cmpne	r2,r2,zero
     c8f4:	1000041e 	bne	r2,zero,c908 <alt_avalon_timer_sc_init+0x4c>
   {
     _alt_tick_rate = nticks;
     c8f8:	00c00074 	movhi	r3,1
-    c8fc:	18c45104 	addi	r3,r3,4420
+    c8fc:	18c44c04 	addi	r3,r3,4400
     c900:	e0bffb17 	ldw	r2,-20(fp)
     c904:	18800015 	stw	r2,0(r3)
   
@@ -15816,18 +15813,18 @@ static ALT_INLINE int* alt_get_errno(void)
     ca28:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     ca2c:	00800074 	movhi	r2,1
-    ca30:	10bda504 	addi	r2,r2,-2412
+    ca30:	10bda004 	addi	r2,r2,-2432
     ca34:	10800017 	ldw	r2,0(r2)
     ca38:	1005003a 	cmpeq	r2,r2,zero
     ca3c:	1000061e 	bne	r2,zero,ca58 <alt_get_errno+0x3c>
     ca40:	00800074 	movhi	r2,1
-    ca44:	10bda504 	addi	r2,r2,-2412
+    ca44:	10bda004 	addi	r2,r2,-2432
     ca48:	10800017 	ldw	r2,0(r2)
     ca4c:	103ee83a 	callr	r2
     ca50:	e0bfff15 	stw	r2,-4(fp)
     ca54:	00000306 	br	ca64 <alt_get_errno+0x48>
     ca58:	00800074 	movhi	r2,1
-    ca5c:	10844a04 	addi	r2,r2,4392
+    ca5c:	10844504 	addi	r2,r2,4372
     ca60:	e0bfff15 	stw	r2,-4(fp)
     ca64:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -16021,15 +16018,15 @@ static ALT_INLINE int ALT_ALWAYS_INLINE alt_irq_enable (alt_u32 id)
     cbf4:	10c4983a 	sll	r2,r2,r3
     cbf8:	1007883a 	mov	r3,r2
     cbfc:	00800074 	movhi	r2,1
-    cc00:	10845304 	addi	r2,r2,4428
+    cc00:	10844e04 	addi	r2,r2,4408
     cc04:	10800017 	ldw	r2,0(r2)
     cc08:	1886b03a 	or	r3,r3,r2
     cc0c:	00800074 	movhi	r2,1
-    cc10:	10845304 	addi	r2,r2,4428
+    cc10:	10844e04 	addi	r2,r2,4408
     cc14:	10c00015 	stw	r3,0(r2)
   NIOS2_WRITE_IENABLE (alt_irq_active);
     cc18:	00800074 	movhi	r2,1
-    cc1c:	10845304 	addi	r2,r2,4428
+    cc1c:	10844e04 	addi	r2,r2,4408
     cc20:	10800017 	ldw	r2,0(r2)
     cc24:	100170fa 	wrctl	ienable,r2
     cc28:	e0bffd17 	ldw	r2,-12(fp)
@@ -16100,15 +16097,15 @@ static ALT_INLINE int ALT_ALWAYS_INLINE alt_irq_disable (alt_u32 id)
     cc94:	0084303a 	nor	r2,zero,r2
     cc98:	1007883a 	mov	r3,r2
     cc9c:	00800074 	movhi	r2,1
-    cca0:	10845304 	addi	r2,r2,4428
+    cca0:	10844e04 	addi	r2,r2,4408
     cca4:	10800017 	ldw	r2,0(r2)
     cca8:	1886703a 	and	r3,r3,r2
     ccac:	00800074 	movhi	r2,1
-    ccb0:	10845304 	addi	r2,r2,4428
+    ccb0:	10844e04 	addi	r2,r2,4408
     ccb4:	10c00015 	stw	r3,0(r2)
   NIOS2_WRITE_IENABLE (alt_irq_active);
     ccb8:	00800074 	movhi	r2,1
-    ccbc:	10845304 	addi	r2,r2,4428
+    ccbc:	10844e04 	addi	r2,r2,4408
     ccc0:	10800017 	ldw	r2,0(r2)
     ccc4:	100170fa 	wrctl	ienable,r2
     ccc8:	e0bffd17 	ldw	r2,-12(fp)
@@ -16220,7 +16217,7 @@ static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE
     alt_irq[id].handler = isr;
     cd90:	e0bff917 	ldw	r2,-28(fp)
     cd94:	00c00074 	movhi	r3,1
-    cd98:	18c46d04 	addi	r3,r3,4532
+    cd98:	18c46804 	addi	r3,r3,4512
     cd9c:	100490fa 	slli	r2,r2,3
     cda0:	10c7883a 	add	r3,r2,r3
     cda4:	e0bffd17 	ldw	r2,-12(fp)
@@ -16228,7 +16225,7 @@ static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE
     alt_irq[id].context = isr_context;
     cdac:	e0bff917 	ldw	r2,-28(fp)
     cdb0:	00c00074 	movhi	r3,1
-    cdb4:	18c46d04 	addi	r3,r3,4532
+    cdb4:	18c46804 	addi	r3,r3,4512
     cdb8:	100490fa 	slli	r2,r2,3
     cdbc:	10c5883a 	add	r2,r2,r3
     cdc0:	10c00104 	addi	r3,r2,4
@@ -16306,7 +16303,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
     fd->dev      = alt_fd_list[old].dev;
     ce70:	e13ffb17 	ldw	r4,-20(fp)
     ce74:	04000074 	movhi	r16,1
-    ce78:	84392204 	addi	r16,r16,-7032
+    ce78:	84391d04 	addi	r16,r16,-7052
     ce7c:	01400304 	movi	r5,12
     ce80:	000a7800 	call	a780 <__mulsi3>
     ce84:	1405883a 	add	r2,r2,r16
@@ -16316,7 +16313,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
     fd->priv     = alt_fd_list[old].priv;
     ce94:	e13ffb17 	ldw	r4,-20(fp)
     ce98:	04000074 	movhi	r16,1
-    ce9c:	84392204 	addi	r16,r16,-7032
+    ce9c:	84391d04 	addi	r16,r16,-7052
     cea0:	01400304 	movi	r5,12
     cea4:	000a7800 	call	a780 <__mulsi3>
     cea8:	1405883a 	add	r2,r2,r16
@@ -16327,7 +16324,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
     fd->fd_flags = alt_fd_list[old].fd_flags;
     cebc:	e13ffb17 	ldw	r4,-20(fp)
     cec0:	04000074 	movhi	r16,1
-    cec4:	84392204 	addi	r16,r16,-7032
+    cec4:	84391d04 	addi	r16,r16,-7052
     cec8:	01400304 	movi	r5,12
     cecc:	000a7800 	call	a780 <__mulsi3>
     ced0:	1405883a 	add	r2,r2,r16
@@ -16366,21 +16363,21 @@ void alt_io_redirect(const char* stdout_dev,
 
   alt_open_fd (&alt_fd_list[STDOUT_FILENO], stdout_dev, O_WRONLY, 0777);
     cf20:	01000074 	movhi	r4,1
-    cf24:	21392504 	addi	r4,r4,-7020
+    cf24:	21392004 	addi	r4,r4,-7040
     cf28:	e17ffd17 	ldw	r5,-12(fp)
     cf2c:	01800044 	movi	r6,1
     cf30:	01c07fc4 	movi	r7,511
     cf34:	000ce2c0 	call	ce2c <alt_open_fd>
   alt_open_fd (&alt_fd_list[STDIN_FILENO], stdin_dev, O_RDONLY, 0777);
     cf38:	01000074 	movhi	r4,1
-    cf3c:	21392204 	addi	r4,r4,-7032
+    cf3c:	21391d04 	addi	r4,r4,-7052
     cf40:	e17ffe17 	ldw	r5,-8(fp)
     cf44:	000d883a 	mov	r6,zero
     cf48:	01c07fc4 	movi	r7,511
     cf4c:	000ce2c0 	call	ce2c <alt_open_fd>
   alt_open_fd (&alt_fd_list[STDERR_FILENO], stderr_dev, O_WRONLY, 0777);
     cf50:	01000074 	movhi	r4,1
-    cf54:	21392804 	addi	r4,r4,-7008
+    cf54:	21392304 	addi	r4,r4,-7028
     cf58:	e17fff17 	ldw	r5,-4(fp)
     cf5c:	01800044 	movi	r6,1
     cf60:	01c07fc4 	movi	r7,511
@@ -16428,7 +16425,7 @@ static int alt_file_locked (alt_fd* fd)
     if ((alt_fd_list[i].dev == fd->dev) &&
     cfb0:	e13ffd17 	ldw	r4,-12(fp)
     cfb4:	04000074 	movhi	r16,1
-    cfb8:	84392204 	addi	r16,r16,-7032
+    cfb8:	84391d04 	addi	r16,r16,-7052
     cfbc:	01400304 	movi	r5,12
     cfc0:	000a7800 	call	a780 <__mulsi3>
     cfc4:	1405883a 	add	r2,r2,r16
@@ -16438,7 +16435,7 @@ static int alt_file_locked (alt_fd* fd)
     cfd4:	1880161e 	bne	r3,r2,d030 <alt_file_locked+0xb4>
     cfd8:	e13ffd17 	ldw	r4,-12(fp)
     cfdc:	04000074 	movhi	r16,1
-    cfe0:	84392204 	addi	r16,r16,-7032
+    cfe0:	84391d04 	addi	r16,r16,-7052
     cfe4:	01400304 	movi	r5,12
     cfe8:	000a7800 	call	a780 <__mulsi3>
     cfec:	1405883a 	add	r2,r2,r16
@@ -16451,7 +16448,7 @@ static int alt_file_locked (alt_fd* fd)
     d008:	000a7800 	call	a780 <__mulsi3>
     d00c:	1007883a 	mov	r3,r2
     d010:	00800074 	movhi	r2,1
-    d014:	10b92204 	addi	r2,r2,-7032
+    d014:	10b91d04 	addi	r2,r2,-7052
     d018:	1887883a 	add	r3,r3,r2
     d01c:	e0bffe17 	ldw	r2,-8(fp)
     d020:	18800326 	beq	r3,r2,d030 <alt_file_locked+0xb4>
@@ -16472,7 +16469,7 @@ static int alt_file_locked (alt_fd* fd)
     d034:	10800044 	addi	r2,r2,1
     d038:	e0bffd15 	stw	r2,-12(fp)
     d03c:	00800074 	movhi	r2,1
-    d040:	10bda404 	addi	r2,r2,-2416
+    d040:	10bd9f04 	addi	r2,r2,-2436
     d044:	10800017 	ldw	r2,0(r2)
     d048:	1007883a 	mov	r3,r2
     d04c:	e0bffd17 	ldw	r2,-12(fp)
@@ -16525,7 +16522,7 @@ int ALT_OPEN (const char* file, int flags, int mode)
   if (!(dev = alt_find_dev (file, &alt_dev_list)))
     d0a4:	e13ffb17 	ldw	r4,-20(fp)
     d0a8:	01400074 	movhi	r5,1
-    d0ac:	297da204 	addi	r5,r5,-2424
+    d0ac:	297d9d04 	addi	r5,r5,-2444
     d0b0:	000d2800 	call	d280 <alt_find_dev>
     d0b4:	e0bffa15 	stw	r2,-24(fp)
     d0b8:	e0bffa17 	ldw	r2,-24(fp)
@@ -16572,7 +16569,7 @@ int ALT_OPEN (const char* file, int flags, int mode)
     d110:	000a7800 	call	a780 <__mulsi3>
     d114:	1007883a 	mov	r3,r2
     d118:	00800074 	movhi	r2,1
-    d11c:	10b92204 	addi	r2,r2,-7032
+    d11c:	10b91d04 	addi	r2,r2,-7052
     d120:	1885883a 	add	r2,r3,r2
     d124:	e0bff915 	stw	r2,-28(fp)
       fd->fd_flags = (flags & ~ALT_FD_FLAGS_MASK);
@@ -16675,18 +16672,18 @@ static ALT_INLINE int* alt_get_errno(void)
     d20c:	df000104 	addi	fp,sp,4
   return ((alt_errno) ? alt_errno() : &errno);
     d210:	00800074 	movhi	r2,1
-    d214:	10bda504 	addi	r2,r2,-2412
+    d214:	10bda004 	addi	r2,r2,-2432
     d218:	10800017 	ldw	r2,0(r2)
     d21c:	1005003a 	cmpeq	r2,r2,zero
     d220:	1000061e 	bne	r2,zero,d23c <alt_get_errno+0x3c>
     d224:	00800074 	movhi	r2,1
-    d228:	10bda504 	addi	r2,r2,-2412
+    d228:	10bda004 	addi	r2,r2,-2432
     d22c:	10800017 	ldw	r2,0(r2)
     d230:	103ee83a 	callr	r2
     d234:	e0bfff15 	stw	r2,-4(fp)
     d238:	00000306 	br	d248 <alt_get_errno+0x48>
     d23c:	00800074 	movhi	r2,1
-    d240:	10844a04 	addi	r2,r2,4392
+    d240:	10844504 	addi	r2,r2,4372
     d244:	e0bfff15 	stw	r2,-4(fp)
     d248:	e0bfff17 	ldw	r2,-4(fp)
 }
@@ -16808,7 +16805,7 @@ alt_dev* alt_find_file (const char* name)
     d324:	e13ffe15 	stw	r4,-8(fp)
   alt_dev* next = (alt_dev*) alt_fs_list.next;   
     d328:	00800074 	movhi	r2,1
-    d32c:	10bda004 	addi	r2,r2,-2432
+    d32c:	10bd9b04 	addi	r2,r2,-2452
     d330:	10800017 	ldw	r2,0(r2)
     d334:	e0bffd15 	stw	r2,-12(fp)
   /*
@@ -16892,7 +16889,7 @@ alt_dev* alt_find_file (const char* name)
  
   while (next != (alt_dev*) &alt_fs_list)
     d408:	00c00074 	movhi	r3,1
-    d40c:	18fda004 	addi	r3,r3,-2432
+    d40c:	18fd9b04 	addi	r3,r3,-2452
     d410:	e0bffd17 	ldw	r2,-12(fp)
     d414:	10ffc91e 	bne	r2,r3,d33c <alt_find_file+0x28>
     next = (alt_dev*) next->llist.next;
@@ -16939,7 +16936,7 @@ int alt_get_fd (alt_dev* dev)
     if (!alt_fd_list[i].dev)
     d45c:	e13ffe17 	ldw	r4,-8(fp)
     d460:	04000074 	movhi	r16,1
-    d464:	84392204 	addi	r16,r16,-7032
+    d464:	84391d04 	addi	r16,r16,-7052
     d468:	01400304 	movi	r5,12
     d46c:	000a7800 	call	a780 <__mulsi3>
     d470:	1405883a 	add	r2,r2,r16
@@ -16950,7 +16947,7 @@ int alt_get_fd (alt_dev* dev)
       alt_fd_list[i].dev = dev;
     d480:	e13ffe17 	ldw	r4,-8(fp)
     d484:	04000074 	movhi	r16,1
-    d488:	84392204 	addi	r16,r16,-7032
+    d488:	84391d04 	addi	r16,r16,-7052
     d48c:	01400304 	movi	r5,12
     d490:	000a7800 	call	a780 <__mulsi3>
     d494:	1407883a 	add	r3,r2,r16
@@ -16958,14 +16955,14 @@ int alt_get_fd (alt_dev* dev)
     d49c:	18800015 	stw	r2,0(r3)
       if (i > alt_max_fd)
     d4a0:	00800074 	movhi	r2,1
-    d4a4:	10bda404 	addi	r2,r2,-2416
+    d4a4:	10bd9f04 	addi	r2,r2,-2436
     d4a8:	10c00017 	ldw	r3,0(r2)
     d4ac:	e0bffe17 	ldw	r2,-8(fp)
     d4b0:	1880040e 	bge	r3,r2,d4c4 <alt_get_fd+0x90>
       {
         alt_max_fd = i;
     d4b4:	00c00074 	movhi	r3,1
-    d4b8:	18fda404 	addi	r3,r3,-2416
+    d4b8:	18fd9f04 	addi	r3,r3,-2436
     d4bc:	e0bffe17 	ldw	r2,-8(fp)
     d4c0:	18800015 	stw	r2,0(r3)
       }
@@ -17042,7 +17039,7 @@ int alt_get_fd (alt_dev* dev)
 0000d58c <__register_exitproc>:
     d58c:	defffa04 	addi	sp,sp,-24
     d590:	00800074 	movhi	r2,1
-    d594:	10bd9b04 	addi	r2,r2,-2452
+    d594:	10bd9604 	addi	r2,r2,-2472
     d598:	dc000015 	stw	r16,0(sp)
     d59c:	14000017 	ldw	r16,0(r2)
     d5a0:	dd000415 	stw	r20,16(sp)
@@ -17094,7 +17091,7 @@ int alt_get_fd (alt_dev* dev)
     d658:	30804115 	stw	r2,260(r6)
     d65c:	003fdf06 	br	d5dc <__register_exitproc+0x50>
     d660:	00800074 	movhi	r2,1
-    d664:	1084ad04 	addi	r2,r2,4788
+    d664:	1084a804 	addi	r2,r2,4768
     d668:	100b883a 	mov	r5,r2
     d66c:	80805215 	stw	r2,328(r16)
     d670:	003fd606 	br	d5cc <__register_exitproc+0x40>
@@ -17119,8 +17116,8 @@ int alt_get_fd (alt_dev* dev)
     d6bc:	003fd706 	br	d61c <__register_exitproc+0x90>
     d6c0:	00000010 	cmplti	zero,zero,0
     d6c4:	00000000 	call	0 <__alt_mem_SDRAM>
-    d6c8:	00527a01 	jmpi	527a0 <_gp+0x3b138>
-    d6cc:	011f7c01 	jmpi	11f7c0 <_gp+0x108158>
+    d6c8:	00527a01 	jmpi	527a0 <_gp+0x3b14c>
+    d6cc:	011f7c01 	jmpi	11f7c0 <_gp+0x10816c>
     d6d0:	001b0c0b 	ldhu	zero,27696(zero)
     d6d4:	00000028 	cmpgeui	zero,zero,0
     d6d8:	00000018 	cmpnei	zero,zero,0
@@ -17129,7 +17126,7 @@ int alt_get_fd (alt_dev* dev)
     d6e4:	3c0e4400 	call	3c0e440 <__alt_data_end+0x340e440>
     d6e8:	910a9074 	orhi	r4,r18,10817
     d6ec:	94089209 	0x94089209
-    d6f0:	97049606 	br	e94c <JTAG_UART+0x344>
+    d6f0:	97049606 	br	e94c <JTAG_UART+0x358>
     d6f4:	93019f03 	ldbu	r12,1660(r18)
     d6f8:	9c059507 	ldb	r16,5716(r19)
     d6fc:	00000002 	0x2

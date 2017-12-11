@@ -8,7 +8,7 @@
 #define CHAIRS 5
 
 /* a delay time used to adjust the frequency of printf messages */
-#define MAX 50000
+#define MAX 100000
 
 int waiting = 0;
 int haircut = 0;
@@ -80,10 +80,7 @@ void os_primitive()
 
     
     if ( start_alarm_succeed() )
-    {
         printf ("Start the alarm successfully\n");
-    	printf ("what is going on\n");
-    }
     else
         printf ("Unable to start the alarm\n");
 
