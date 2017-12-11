@@ -20,7 +20,7 @@
 
 /* the current running thread */
 static tcb *current_running_thread      = NULL;
-static Q_type *runQueue = Queue(NULL, NULL, 0);
+static Q_type *runQueue = NULL;
 
 /* pointing to the stack/context of main() */
 static unsigned int *main_stack_pointer = NULL;
@@ -30,13 +30,19 @@ tcb *get_current_running_thread()
 	return current_running_thread;
 }
 
+void run_queue_init()
+{
+	runQueue = Queue(NULL, NULL, 0);
+}
+
 Q_type *get_running_queue()
 {
-	return runQueue;
+	return (Q_type*)runQueue;
 }
 
 tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)(unsigned int tid))
 {
+	//printf("inside\n");
     unsigned int *tmp_ptr;
     
     /* allocate a tcb for a thread */
@@ -75,6 +81,7 @@ tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)
 /* NEW ----> READY */
 void mythread_start(tcb *thread_pointer)
 {
+	//printf("I started\n");
     // assert(thread_pointer && thread_pointer->state == NEW);
     thread_pointer->state = READY;
 }
@@ -82,6 +89,7 @@ void mythread_start(tcb *thread_pointer)
 /* READY --push into--> readyQ */
 void mythread_join(tcb *thread_pointer)
 {
+	//printf("I joined\n");
     // assert(thread_pointer && thread_pointer->state == READY);
     enqueue((void *)thread_pointer, runQueue);
 }

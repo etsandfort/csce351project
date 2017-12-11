@@ -4,7 +4,7 @@
  *  Created on: Nov 12, 2017
  *      Author: witty
  */
-
+#include <stdio.h>
 #include "mysem.h"
 #include "thread_handler.h"
 
@@ -24,14 +24,13 @@ int semInit(semaphore * sem, int semVal)
 	sem->value = semVal;
 	sem->threadCount = 0;
 	sem->blockingQueue = Queue(NULL, NULL, 0);
-	return (sem->value != NULL && sem->threadCount != NULL && sem->blockingQueue != NULL); //return 1 if all init succeeds
+	return (sem->value == semVal && sem->threadCount == 0 && sem->blockingQueue != NULL); //return 1 if all init succeeds
 }
 
 void semDown(semaphore * sem)
 {
-	if(sem->value == 0) // block thread
+	if(sem->value > 0) // block thread
 	{
-		//need to disable interrupts here
 		DISABLE_INTERRUPTS();
 		sem->threadCount++;
 		get_current_running_thread()->state = BLOCKED;
@@ -43,7 +42,6 @@ void semDown(semaphore * sem)
 	DISABLE_INTERRUPTS();
 	sem->value--;
 	ENABLE_INTERRUPTS();
-	/* implement your logic to perform down operation on a semaphore here */
 }
 
 void semUp(semaphore * sem)
@@ -51,7 +49,6 @@ void semUp(semaphore * sem)
 
 	DISABLE_INTERRUPTS();
 	sem->value++;
-	//TODO Need to disable interrupts for this bit
 	while(sem->threadCount)
 	{
 
@@ -60,7 +57,6 @@ void semUp(semaphore * sem)
 		sem->threadCount--;
 	}
 	ENABLE_INTERRUPTS();
-	/* implement your logic to perform up operation on a semaphore here */
 }
 
 unsigned int semValue(semaphore * sem)

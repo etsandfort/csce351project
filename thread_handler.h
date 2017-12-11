@@ -27,6 +27,8 @@ tcb *get_current_running_thread();
 
 Q_type *get_running_queue();
 
+void run_queue_init();
+
 tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)(unsigned int tid));
 
 void mythread_start(tcb *thread_pointer);

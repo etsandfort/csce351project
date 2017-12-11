@@ -3,6 +3,7 @@
 	<name>csce351project</name>
 	<comment></comment>
 	<projects>
+		<project>csce351project_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

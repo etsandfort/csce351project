@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "queue.h"
 
 //static Q_type queue = {NULL, NULL, 0};
 Q_type *Queue(E_type *head, E_type * tail, unsigned int size)
 {
-	Q_type queue = {NULL, NULL, 0};
-	return &queue;
+
+	Q_type *queue = malloc(sizeof(Q_type));
+	queue->head = NULL;
+	queue->tail = NULL;
+	queue->size = 0;
+	return queue;
 }
 
 void enqueue(void *data, Q_type *queue)

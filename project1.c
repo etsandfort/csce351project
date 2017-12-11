@@ -8,11 +8,10 @@
 #define CHAIRS 5
 
 /* a delay time used to adjust the frequency of printf messages */
-#define MAX 500000
+#define MAX 50000
 
 int waiting = 0;
 int haircut = 0;
-
 semaphore customerAvailable, stylistAvailable, mutex;
 
 
@@ -63,6 +62,7 @@ void stylist(unsigned int tid)
 void os_primitive()
 {
     unsigned int i;
+    run_queue_init();
     tcb *thread_pointer;
     semInit(&customerAvailable,0);
     semInit(&stylistAvailable,0);
@@ -80,11 +80,14 @@ void os_primitive()
 
     
     if ( start_alarm_succeed() )
+    {
         printf ("Start the alarm successfully\n");
+    	printf ("what is going on\n");
+    }
     else
         printf ("Unable to start the alarm\n");
 
-    /* an endless while loop */
+    /* a while loop that runs forever*/
     while (1)
     {
         /* delay printf for a while */

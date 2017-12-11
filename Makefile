@@ -142,9 +142,13 @@ ACDS_VERSION := 12.0sp2
 ELF := csce351project.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS :=
+C_SRCS += project1.c
+C_SRCS += queue.c
+C_SRCS += thread_handler.c
+C_SRCS += alarm_handler.c
+C_SRCS += mysem.c
 CXX_SRCS :=
-ASM_SRCS :=
+ASM_SRCS := exception_handler.S
 
 
 # Path to root of object file tree.
