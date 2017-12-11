@@ -1,8 +1,14 @@
-Readme - Final Project Template Files
+Readme - Hello World Software Example
 
 DESCRIPTION:
-Simple program that solves the sleeping barber problem. 
-The program is not complete and you'll need to complete mysem.c to implement semaphore.
+Simple program that prints "Hello from Nios II"
+
+The memory footprint of this hosted application is intended to be small (under 100 kbytes) by default
+using a standard reference deisgn.
+
+For an even smaller, reduced footprint version of this template, and an explanation of how
+to reduce the memory footprint for a given application, see the
+"small_hello_world" template.
 
 
 PERIPHERALS USED:

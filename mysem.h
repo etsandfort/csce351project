@@ -8,9 +8,12 @@
 #ifndef MYSEM_H_
 #define MYSEM_H_
 
+#include "queue.h"
+
 struct mySem{
 	int threadCount;
 	int value;
+	Q_type *blockingQueue;
 	/* You need to add your blocking queue in this struct. */
 };
 

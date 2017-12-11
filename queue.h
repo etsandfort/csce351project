@@ -20,8 +20,11 @@ typedef struct queue_type
     unsigned int        size;
 } Q_type;
 
-void enqueue(void *data);
 
-void *dequeue();
+Q_type *Queue(E_type *head, E_type * tail, unsigned int size);
 
-unsigned int getQsize();
+void enqueue(void *data, Q_type *queue);
+
+void *dequeue(Q_type *queue);
+
+unsigned int getQsize(Q_type *queue);

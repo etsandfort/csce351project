@@ -20,10 +20,20 @@
 
 /* the current running thread */
 static tcb *current_running_thread      = NULL;
-
+static Q_type *runQueue = Queue(NULL, NULL, 0);
 
 /* pointing to the stack/context of main() */
 static unsigned int *main_stack_pointer = NULL;
+
+tcb *get_current_running_thread()
+{
+	return current_running_thread;
+}
+
+Q_type *get_running_queue()
+{
+	return runQueue;
+}
 
 tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)(unsigned int tid))
 {
@@ -73,7 +83,7 @@ void mythread_start(tcb *thread_pointer)
 void mythread_join(tcb *thread_pointer)
 {
     // assert(thread_pointer && thread_pointer->state == READY);
-    enqueue((void *)thread_pointer);
+    enqueue((void *)thread_pointer, runQueue);
 }
 
 /* RUNNING ----> BLOCKED */
@@ -92,7 +102,7 @@ void mythread_terminate(tcb *thread_pointer)
 
 void *mythread_schedule(void *context)
 {
-    if (getQsize() > 0)
+    if (getQsize(runQueue) > 0)
     {
         if (current_running_thread != NULL)
         {
@@ -100,14 +110,22 @@ void *mythread_schedule(void *context)
             // assert(main_stack_pointer != NULL);
             current_running_thread->state = READY;
             current_running_thread->stack_pointer = (unsigned int *)context;
-            enqueue(current_running_thread);
+            enqueue(current_running_thread, runQueue);
         }
         else if (main_stack_pointer == NULL)
         {
             main_stack_pointer = (unsigned int *)context;
         }
         
-        current_running_thread = (tcb *)dequeue();
+        do
+        {
+        	current_running_thread = (tcb *)dequeue(runQueue);
+        	if(current_running_thread->state == BLOCKED)
+        	{
+        		enqueue(current_running_thread, runQueue);
+        	}
+        } while (current_running_thread->state == BLOCKED);
+
         // assert(current_running_thread->state == READY);
         current_running_thread->state = RUNNING;
         
@@ -123,7 +141,7 @@ void *mythread_schedule(void *context)
 
 unsigned int mythread_isQempty()
 {
-    return (getQsize() == 0) && (current_running_thread == NULL);
+    return (getQsize(runQueue) == 0) && (current_running_thread == NULL);
 }
 
 void mythread_cleanup()

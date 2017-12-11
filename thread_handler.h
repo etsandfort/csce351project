@@ -7,6 +7,8 @@ Description:
     Functions used to manage threads
 */
 
+#import "queue.h"
+
 /* possible thread states */
 enum tstate {NEW, READY, RUNNING, BLOCKED, TERMINATED, NUM_TSTATES};
 
@@ -21,6 +23,10 @@ typedef struct
 } tcb;
 
 /* declaration */
+tcb *get_current_running_thread();
+
+Q_type *get_running_queue();
+
 tcb *mythread_create(unsigned int tid, unsigned int stack_size, void (*mythread)(unsigned int tid));
 
 void mythread_start(tcb *thread_pointer);
